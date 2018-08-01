@@ -1,0 +1,18 @@
+.center{
+	text-align:center;
+}
+
+.oculto{
+	display:none;
+}
+
+.seccion{
+	display:block;
+	margin:50px;
+	clear:both;
+}
+
+.no-scroll{
+	overflow:hidden;
+}
+

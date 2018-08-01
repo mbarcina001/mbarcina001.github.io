@@ -1,0 +1,297 @@
+@font-face {
+	font-family: "MMTextPro-Semibold";
+	src: url("/assets/webfonts/MMTextProWebTT-Bold.eot?") format("eot"),
+		 url("/assets/webfonts/MMTextProWebTT-Bold.woff") format("woff"),
+		 url("/assets/webfonts/MMTextProWebTT-Bold.ttf") format("truetype"),
+}
+
+#modalProyectos {
+	.modal-content{
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		overflow:hidden;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(20, 1fr);
+		
+		.close{
+			span{
+				font-size: 40px;
+				margin-right: 20px;
+				
+				&:hover, &:focus{
+					text-decoration: none;
+					cursor: pointer;
+				}
+			}
+		}
+		
+		.modalImg{
+			grid-column: 1 / 10;
+			grid-row: 1 / -1;
+			display:grid;
+			grid-template-columns: repeat(12, 1fr);
+			
+			.img-container{
+				grid-column: 2 / -2;
+				position:relative;
+				
+				img{
+					margin: auto;
+					width: auto;
+					height: auto;
+					max-width: 90%;
+					max-height: 95%;
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+				
+			.flecha-container{
+				height:100%;
+				position:relative;
+				
+				.flecha{
+					opacity: 0.3;
+					cursor: pointer;
+					background-color:white;
+					height: 50px;
+					width: 50px;
+					vertical-align: middle;
+					text-align: center;
+					border-radius:50px;
+					position: absolute;
+					top: 50%;
+					z-index:3;
+					
+					&:hover{
+						-webkit-transform: scale(1.2);
+						transform: scale(1.2);
+						opacity:1;
+					}
+					
+					i{
+						vertical-align: middle;
+						position: absolute;
+						top: 50%;
+						left: 60%;
+						margin: -15% 0 0 -20%;
+					}
+				}
+				
+				.flechaIzq{
+					grid-column: 1 / 2;
+					left:20px;
+				}
+				
+				.flechaDch{
+					grid-column: -2 / -1;
+					right:20px;
+				}
+			}
+		}
+
+		.modalCaption{
+			grid-column: 10 / 13;
+			grid-row: 2 / -1;
+			background-color: white;
+			position: relative;
+			overflow: auto;
+			border-top: 1px solid black;
+			
+			&::-webkit-scrollbar-track{
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+				border-radius: 10px;
+				background-color: #F5F5F5;
+			}
+
+			&::-webkit-scrollbar{
+				width: 12px;
+				background-color: #F5F5F5;
+			}
+
+			&::-webkit-scrollbar-thumb{
+				border-radius: 10px;
+				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+				background-color: #555;
+			}
+			
+			.textoCaption{
+				margin: 20px 20px;
+			}
+			
+			.link-container {
+				position: absolute;
+				text-align: center;
+				width: 100%;
+				z-index: 2;
+				margin-bottom:20px;
+				
+				.link{
+					color: white;
+					width: 250px;
+					border-radius: 300px;
+					text-decoration: none;
+					display: block;
+					margin: 20px auto 20px auto;
+					text-align: center;
+					padding: 20px;
+					    text-align: center;
+					
+					i {
+						margin-right: 20px;
+					}
+				}
+				
+				.arklink {
+					background-color: #00edc5;
+					width:80%;
+				}
+				
+				.gitlink {
+					background-color: #000;
+					width:80%;
+				}
+				
+				.mmlink {
+					background-color: #DF0000;
+					font-family: MMTextPro-Semibold;
+				}
+				
+				p{
+					margin-left:10px;
+					margin-right:10px;
+				}
+			}
+		}
+	}
+}
+
+.oculto{
+	display:none
+}
+
+.button {
+	position: relative;
+	appearance: none;
+	background: #f72359;
+	padding: 1em 2em;
+	border: none;
+	color: white;
+	font-size: 1.2em;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	border-radius: 100px;
+	
+	span {
+		position: relative;
+		pointer-events: none;
+	}
+	
+	&::before {
+		--size: 0;
+
+		content: '';
+		position: absolute;
+		left: var(--x);
+		top: var(--y);
+		width: var(--size);
+		height: var(--size);
+		background: radial-gradient(circle closest-side, #4405f7, transparent);
+		transform: translate(-50%, -50%);
+		transition: width .2s ease, height .2s ease;
+	}
+	
+	&:hover::before {
+		--size: 400px;
+	}
+}
+
+@media (min-width: 992px){
+	.close {
+		grid-row: 1 / 2 !important;
+		grid-column: 10/-1 !important;
+		text-align: right !important;
+		background-color: white !important;
+		z-index: 20 !important;
+		
+		span{
+			font-size: 40px !important;
+			margin-right: 20px !important;
+			
+			&:hover, &:focus{
+				text-decoration: none !important;
+				cursor: pointer !important;
+			}
+		}
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+	.modal-content{
+		.close {
+			position: fixed !important;
+			top:0 !important;
+			right:0 !important;
+			z-index:5 !important;
+			color:white !important;
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.modal-content{
+		.modalImg{
+			grid-column: 1 / -1 !important;
+			grid-row: 1 / 15 !important;
+		}
+		
+		.modalCaption{
+			grid-column: 1 / -1 !important;
+			grid-row: 15 / -1 !important;
+		}
+	}
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+	.modalImg{
+		grid-column: 1 / -1 !important;
+		grid-row: 1 / 12 !important;
+	}
+	
+	.modalCaption{
+		grid-column: 1 / -1 !important;
+		grid-row: 12 / -1 !important;
+	}
+	
+	.flechaIzq{
+		left:10px !important;;
+	}
+	
+	.flechaDch{
+		right:10px !important;;
+	}
+}
+
+/* Mobile */
+@media (max-width: 425px) {
+	.flecha{
+		height: 30px !important;
+		width: 30px !important;
+		
+		i{
+			margin: -20% 0 0 -20% !important;
+		}
+	}
+}

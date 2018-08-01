@@ -1,0 +1,282 @@
+@font-face {
+	font-family: "IndieFlower";
+	src: url("/assets/webfonts/IndieFlower.ttf") format("truetype"),
+}
+
+@font-face {
+	font-family: "BellaDonna";
+	src: url("/assets/webfonts/BellaDonna.ttf") format("truetype"),
+}
+
+@font-face {
+	font-family: "writers_original";
+	src: url("/assets/webfonts/writers_original.ttf") format("truetype"),
+}
+
+@font-face {
+	font-family: "WeekendontheMountains";
+	src: url("/assets/webfonts/WeekendontheMountains.ttf") format("truetype"),
+}
+
+#landing{
+	height:auto;
+	min-height: 100vh;
+	min-width:400px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	background-color: black;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border:0;
+	background-image: url(/assets/images/computer.jpeg);
+	
+	&:before{
+		background-image: -webkit-gradient(linear, left top, right top, from(rgba(49,61,65,0.6)), to(rgba(49,61,65,0.6)));
+		background-image: linear-gradient(90deg, rgba(49,61,65,0.6), rgba(49,61,65,0.6));
+		display: block;
+		position: absolute;
+		width: 100%;
+		top: 0;
+		content: '';
+		right: 0;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		z-index:0;
+	}
+	
+	#landing-content{
+		display: flex;
+		height: auto;
+		flex-direction: column;
+		//position: absolute;
+		
+		#titulo{
+			font-size: 40px;
+			align-items: center;
+			margin-top: 5%;
+			margin-left: 5%;
+			margin-right: 5%;
+			z-index:1;
+			
+			h1{
+				color: white;
+				width: 100%;
+				font-family: 'BellaDonna';
+				margin-bottom: 0;
+				.coma{
+					font-family: 'WeekendontheMountains';
+					margin-left: -8px;
+				}
+				
+				.name{
+					font-family: 'writers_original';
+				}
+			}
+		}
+
+		#info{
+			width:75%;
+			margin-left: auto;
+			margin-right: auto;
+			color: white;
+			font-size: 18px;
+			font-family: 'IndieFlower';
+			z-index:1;
+			
+			.info-content{
+				//margin-top: 7%;
+			}
+		}
+		
+		#descargacurriculum{
+			margin-top: 5%;
+			z-index:1;
+		
+			.descargacurriculum {
+				background-color: lightgrey;
+				color: black;
+				width: 300px;
+				text-align: center;
+				text-decoration: none;
+				display: block;
+				padding: 25px;
+				margin: auto;
+				border-radius: 50px;
+				font-size: 15px;
+				font-weight: bold;
+				text-transform: uppercase;
+				font-family:'Coolvetica';
+  
+				&:hover {
+					-webkit-transform: scale(0.9);
+					transform: scale(0.9);
+				}
+				
+				i {
+					margin-left:20px;
+				}
+			}
+		}	
+		
+		#trayectoria{	
+			z-index:1;
+			
+			p{
+				margin-top: 7em;
+				width: 100%;
+				font-family: 'IndieFlower';
+			}
+			
+			a{
+				text-decoration:none;
+				color:white;
+			}
+			
+			i{
+				margin-left:10px;
+			}
+			
+			.fdown{
+				-webkit-animation-duration: 2s;
+				-moz-animation-duration: 2s;
+			}
+		}
+	}
+	
+	.modal-warning-construccion {
+		display: block;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0); 
+		background-color: rgba(0,0,0,0.4);
+		
+		.content {
+			background-color: #fefefe;
+			margin: 15% auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%; 
+			display:inline-block;
+			height: 300px;
+			position: relative;
+			border-radius: 20px;
+
+			div{
+				display:inline-block;
+				position: absolute;
+			}
+			
+			.icono{
+				width: 30%;
+				left: 0;
+				top: 30%;
+				font-size: 100px;
+				color: red;
+			}
+			
+			.texto{
+				width: 60%;
+				position: absolute;
+				right: 10%;
+				text-align: center;
+				top: 20%;
+				font-size: 50px;
+				
+				p{
+					margin:0;
+				}
+				
+				a{
+					color:black;
+				}
+			}
+		}
+	}
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1644px) {
+  /*.modal-warning-construccion .content .texto {
+		top:10% !important;
+	}*/
+}
+
+
+@media (max-width: 1440px) {
+	
+}
+
+@media (max-width: 1200px) {
+	#titulo{
+		font-size: 35px !important;
+	}
+}
+
+/* TABLETS */
+@media (max-width: 991px) {
+	/*.modal-warning-construccion .content .texto {
+		font-size:40px !important;
+	}*/
+	
+	#info{
+		font-size: 16px !important;
+	}
+}
+
+/* SMALL DEVICES */
+@media (max-width: 767px) {
+	#titulo{
+		margin-top: 0% !important;
+		font-size: 30px !important;
+	}
+	
+	/*.modal-warning-construccion .content .texto {
+		top:25% !important;
+		font-size:30px !important;
+	}*/
+	
+	#descargacurriculum{
+		margin-top: 2% !important;
+	}
+}
+
+@media (max-width: 625px) {
+	.descargacurriculum {
+		margin-top:5% !important;
+	}
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+	#info{
+		width:90% !important;
+	}
+	
+	.modal-warning-construccion .content .texto {
+		top:15% !important;
+		font-size:30px !important;
+	}
+}
+
+@media (max-width: 360px) {
+	.modal-warning-construccion .content{
+		.icono {
+			top: 35% !important;
+			font-size: 70px !important;
+		}
+		
+		.texto{
+		    top: 25% !important;
+			font-size:20px !important;
+		}
+	}
+}
