@@ -6,7 +6,7 @@ import { ModalComponent } from '../modal/modal.component';
 @Component({
 	selector: 'app-proyectos',
 	templateUrl: './proyectos.component.html',
-  styleUrls: ['./proyectos.component.scss', '../../assets/styles/font-mfizz.css', '../../assets/styles/fontawesome-all.css', '../../assets/styles/fa-brands.min.css', '../../assets/styles/animate.min.css']
+  styleUrls: ['./proyectos.component.scss', '../../assets/styles/font-mfizz.css', '../../assets/styles/fontawesome-all.css', '../../assets/styles/fa-brands.min.css', '../..//assets/styles/animate.min.css']
 })
 export class ProyectosComponent implements OnInit {
     selectedProyecto:Proyecto;
@@ -45,8 +45,8 @@ export class ProyectosComponent implements OnInit {
 			"Página web para solicitar la tarjeta de MediaMarkt, Gas Natural, Ventajon, etc.",
 			[
 				"/Portfolio/assets/images/mm1.PNG",
-				/*"/Portfolio/assets/images/gn1.PNG",
-				"/Portfolio/assets/images/ve1.PNG",*/
+				"/Portfolio/assets/images/gn1.PNG",
+				"/Portfolio/assets/images/ve1.PNG",
 				"/Portfolio/assets/images/mm2.PNG",
 				"/Portfolio/assets/images/mm3.PNG",
 				"/Portfolio/assets/images/mm4.PNG",
@@ -68,12 +68,18 @@ export class ProyectosComponent implements OnInit {
 			"mmlink",
 			"https://comercios.caixabankconsumer.com/apw5/fncWebFinOnline/MediaMarkt.do"
 		),
-		/*new Proyecto(
-			"p2",
+		new Proyecto(
+			"p3",
 			"Digitalización Telefónica Consumer Finance",
 			"Página web para financiar diversos teléfonos móviles con TCF",
 			[
-				"/Portfolio/assets/images/mm1.png"
+				"/Portfolio/assets/images/dig1.PNG",
+				"/Portfolio/assets/images/dig2.PNG",
+				"/Portfolio/assets/images/dig3.PNG",
+				"/Portfolio/assets/images/dig4.PNG",
+				"/Portfolio/assets/images/dig5.PNG",
+				"/Portfolio/assets/images/dig6.PNG",
+				"/Portfolio/assets/images/dig7.jpg"
 			],
 			0,
 			[
@@ -83,7 +89,7 @@ export class ProyectosComponent implements OnInit {
 			],
 			"No",
 			"No"
-		),*/
+		),
 	];
 	
 	proyectosCarrera:Proyecto[] = [

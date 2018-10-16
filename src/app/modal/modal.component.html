@@ -6,7 +6,7 @@
 		
 		<div class="modalImg">
 			<div class="flecha-container">
-				<div class="flecha flechaIzq" (click)="siguienteImg(); flechaClick('flechaIzq');"> <i class="fas fa-angle-left"></i> </div>
+				<div class="flecha flechaIzq" (click)="anteriorImg(); flechaClick('flechaIzq');"> <i class="fas fa-angle-left"></i> </div>
 			</div>
 			<div class="img-container">
 				<img [src]="proyecto.imgs[proyectoIndex]">
@@ -24,7 +24,7 @@
 				</div>
 			</div>
 			<div class="flecha-container">
-				<div class="flecha flechaDch" (click)="anteriorImg(); flechaClick('flechaDch');"> <i class="fas fa-angle-right"></i> </div>
+				<div class="flecha flechaDch" (click)="siguienteImg(); flechaClick('flechaDch');"> <i class="fas fa-angle-right"></i> </div>
 			</div>	
 		</div>
 		
