@@ -13,7 +13,7 @@
             <h3>{{this.selectedTrayectoria.cargo}}</h3>
             <h4>{{this.selectedTrayectoria.tiempo}}</h4>
 
-            <p *ngFor="let descripcion of this.selectedTrayectoria.descripcion">{{descripcion}}</p>
+            <div [innerHTML]=this.selectedTrayectoria.descripcion></div>
         </div>
     </div>
 

@@ -22,14 +22,14 @@ export class ProyectosComponent implements OnInit {
 			"Webs CCF",
 			"Mantenimiento y atención de incidencias para las webs de servicios para CaixaBank Consumer Finance.",
 			[
-				"/Portfolio/assets/images/ccf1.PNG",
-				"/Portfolio/assets/images/ccf2.PNG",
-				"/Portfolio/assets/images/ccf3.PNG",
-				"/Portfolio/assets/images/ccf4.PNG",
-				"/Portfolio/assets/images/ccf5.PNG",
-				"/Portfolio/assets/images/ccf6.PNG",
-				"/Portfolio/assets/images/ccf7.PNG",
-				"/Portfolio/assets/images/ccf8.PNG"
+				"/Portfolio/assets/images/proyectos/ccf1.PNG",
+				"/Portfolio/assets/images/proyectos/ccf2.PNG",
+				"/Portfolio/assets/images/proyectos/ccf3.PNG",
+				"/Portfolio/assets/images/proyectos/ccf4.PNG",
+				"/Portfolio/assets/images/proyectos/ccf5.PNG",
+				"/Portfolio/assets/images/proyectos/ccf6.PNG",
+				"/Portfolio/assets/images/proyectos/ccf7.PNG",
+				"/Portfolio/assets/images/proyectos/ccf8.PNG"
 			],
 			0,
 			[
@@ -47,17 +47,17 @@ export class ProyectosComponent implements OnInit {
 			"Minisite finonline",
 			"Página web para solicitar la tarjeta de MediaMarkt, Gas Natural, Ventajon, etc.",
 			[
-				"/Portfolio/assets/images/mm1.PNG",
-				"/Portfolio/assets/images/gn1.PNG",
-				"/Portfolio/assets/images/ve1.PNG",
-				"/Portfolio/assets/images/mm2.PNG",
-				"/Portfolio/assets/images/mm3.PNG",
-				"/Portfolio/assets/images/mm4.PNG",
-				"/Portfolio/assets/images/mm5.PNG",
-				"/Portfolio/assets/images/mm6.PNG",
-				"/Portfolio/assets/images/mm7.PNG",
-				"/Portfolio/assets/images/mm8.PNG",
-				"/Portfolio/assets/images/mm9.PNG"
+				"/Portfolio/assets/images/proyectos/mm1.PNG",
+				"/Portfolio/assets/images/proyectos/gn1.PNG",
+				"/Portfolio/assets/images/proyectos/ve1.PNG",
+				"/Portfolio/assets/images/proyectos/mm2.PNG",
+				"/Portfolio/assets/images/proyectos/mm3.PNG",
+				"/Portfolio/assets/images/proyectos/mm4.PNG",
+				"/Portfolio/assets/images/proyectos/mm5.PNG",
+				"/Portfolio/assets/images/proyectos/mm6.PNG",
+				"/Portfolio/assets/images/proyectos/mm7.PNG",
+				"/Portfolio/assets/images/proyectos/mm8.PNG",
+				"/Portfolio/assets/images/proyectos/mm9.PNG"
 			],
 			0,
 			[
@@ -76,13 +76,13 @@ export class ProyectosComponent implements OnInit {
 			"Digitalización Telefónica Consumer Finance",
 			"Página web para financiar diversos teléfonos móviles con TCF",
 			[
-				"/Portfolio/assets/images/dig1.PNG",
-				"/Portfolio/assets/images/dig2.PNG",
-				"/Portfolio/assets/images/dig3.PNG",
-				"/Portfolio/assets/images/dig4.PNG",
-				"/Portfolio/assets/images/dig5.PNG",
-				"/Portfolio/assets/images/dig6.PNG",
-				"/Portfolio/assets/images/dig7.PNG"
+				"/Portfolio/assets/images/proyectos/dig1.PNG",
+				"/Portfolio/assets/images/proyectos/dig2.PNG",
+				"/Portfolio/assets/images/proyectos/dig3.PNG",
+				"/Portfolio/assets/images/proyectos/dig4.PNG",
+				"/Portfolio/assets/images/proyectos/dig5.PNG",
+				"/Portfolio/assets/images/proyectos/dig6.PNG",
+				"/Portfolio/assets/images/proyectos/dig7.PNG"
 			],
 			0,
 			[
@@ -101,8 +101,8 @@ export class ProyectosComponent implements OnInit {
 			"Juego: Pasapalabra",
 			"Juego realizado en Java del popular concurso de televisión Pasapalabra.",
 			[
-				"/Portfolio/assets/images/pasapalabra1.JPG",
-				"/Portfolio/assets/images/pasapalabra2.JPG"
+				"/Portfolio/assets/images/proyectos/pasapalabra1.JPG",
+				"/Portfolio/assets/images/proyectos/pasapalabra2.JPG"
 			],
 			1,
 			[],
@@ -114,12 +114,12 @@ export class ProyectosComponent implements OnInit {
 			"Juego: Arkanoid",
 			"Juego Arkanoid desarrollado en JavaScript para navegador web",
 			[
-				"/Portfolio/assets/images/arkanoid0.JPG",
-				"/Portfolio/assets/images/arkanoid1.JPG",
-				"/Portfolio/assets/images/arkanoid2.JPG",
-				"/Portfolio/assets/images/arkanoid3.JPG",
-				"/Portfolio/assets/images/arkanoid4.JPG",
-				"/Portfolio/assets/images/arkanoid5.JPG"
+				"/Portfolio/assets/images/proyectos/arkanoid0.JPG",
+				"/Portfolio/assets/images/proyectos/arkanoid1.JPG",
+				"/Portfolio/assets/images/proyectos/arkanoid2.JPG",
+				"/Portfolio/assets/images/proyectos/arkanoid3.JPG",
+				"/Portfolio/assets/images/proyectos/arkanoid4.JPG",
+				"/Portfolio/assets/images/proyectos/arkanoid5.JPG"
 			],
 			1,
 			[
@@ -137,10 +137,10 @@ export class ProyectosComponent implements OnInit {
 			"Juego: Ruleta de la fortuna",
 			"Juego en Java del popular programa de televisión La ruleta de la fortuna",
 			[
-				"/Portfolio/assets/images/ruleta1.JPG",
-				"/Portfolio/assets/images/ruleta2.JPG",
-				"/Portfolio/assets/images/ruleta3.JPG",
-				"/Portfolio/assets/images/ruleta4.JPG"
+				"/Portfolio/assets/images/proyectos/ruleta1.JPG",
+				"/Portfolio/assets/images/proyectos/ruleta2.JPG",
+				"/Portfolio/assets/images/proyectos/ruleta3.JPG",
+				"/Portfolio/assets/images/proyectos/ruleta4.JPG"
 			],
 			1,
 			[],
@@ -152,7 +152,7 @@ export class ProyectosComponent implements OnInit {
 			"Gestor de encierros en San Fermín",
 			"Aplicación en Java para que las ganaderías que participan en San Fermín puedan administrar su participación.",
 			[
-				"/Portfolio/assets/images/encierros1.JPG",
+				"/Portfolio/assets/images/proyectos/encierros1.JPG",
 			],
 			0,
 			[
@@ -169,11 +169,11 @@ export class ProyectosComponent implements OnInit {
 			"Aplicación Android: Gestor de Reuniones",
 			"Aplicación en Android para la gestión de reuniones.",
 			[
-				"/Portfolio/assets/images/App1.png",
-				"/Portfolio/assets/images/App2.png",
-				"/Portfolio/assets/images/App3.png",
-				"/Portfolio/assets/images/App4.png",
-				"/Portfolio/assets/images/App5.png"	
+				"/Portfolio/assets/images/proyectos/App1.png",
+				"/Portfolio/assets/images/proyectos/App2.png",
+				"/Portfolio/assets/images/proyectos/App3.png",
+				"/Portfolio/assets/images/proyectos/App4.png",
+				"/Portfolio/assets/images/proyectos/App5.png"	
 			],
 			2,
 			[
@@ -193,10 +193,10 @@ export class ProyectosComponent implements OnInit {
 			"Detector de entidades en textos médicos",
 			"Aplicación que emplea técnicas de minería de datos (aprendizaje semisupervisado y evaluación no supervisada) para identificar entidades tales como enfermedades y medicamentos en textos médicos.",
 			[
-				"/Portfolio/assets/images/TFG1.JPG",
-				"/Portfolio/assets/images/tfg2.JPG",
-				"/Portfolio/assets/images/tfg3.JPG",
-				"/Portfolio/assets/images/tfg4.JPG"
+				"/Portfolio/assets/images/proyectos/TFG1.JPG",
+				"/Portfolio/assets/images/proyectos/tfg2.JPG",
+				"/Portfolio/assets/images/proyectos/tfg3.JPG",
+				"/Portfolio/assets/images/proyectos/tfg4.JPG"
 			],
 			3,
 			[],
