@@ -4,7 +4,7 @@
 	<article id="aptitudes-content" class="aptitudes-content">
 		<div class="aptitud" *ngFor="let aptitud of aptitudes" >
 			<img *ngIf="aptitud.type === 'img'" src="{{aptitud.icon}}">
-			<i *ngIf="aptitud.type === 'icon'" class="icon {{aptitud.icon}}"></i>
+			<i class="{{aptitud.type}} {{aptitud.icon}}"></i>
 			<p class="descripcion-aptitud">{{aptitud.descripcion}}</p>
 		</div>
 	</article>

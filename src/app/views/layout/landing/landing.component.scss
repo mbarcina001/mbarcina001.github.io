@@ -54,7 +54,6 @@
 		//position: absolute;
 		
 		#titulo{
-			font-size: 40px;
 			align-items: center;
 			margin-top: 5%;
 			margin-left: 5%;
@@ -66,6 +65,7 @@
 				width: 100%;
 				font-family: 'BellaDonna';
 				margin-bottom: 0;
+				font-size: 5rem;
 				.coma{
 					font-family: 'WeekendontheMountains';
 					margin-left: -8px;
@@ -82,12 +82,12 @@
 			margin-left: auto;
 			margin-right: auto;
 			color: white;
-			font-size: 18px;
+			font-size: 1.25rem;
 			font-family: 'IndieFlower';
 			z-index:1;
 			
 			.info-content{
-				//margin-top: 7%;
+				margin-top: 7%;
 			}
 		}
 		
@@ -212,12 +212,14 @@
 
 
 @media (max-width: 1440px) {
-	
+	#titulo h1{
+		font-size: 4.5rem !important;
+	}
 }
 
 @media (max-width: 1200px) {
-	#titulo{
-		font-size: 35px !important;
+	#titulo h1{
+		font-size: 4rem !important;
 	}
 }
 
@@ -235,24 +237,12 @@
 /* SMALL DEVICES */
 @media (max-width: 767px) {
 	#titulo{
-		margin-top: 0% !important;
-		font-size: 30px !important;
-	}
-	
-	/*.modal-warning-construccion .content .texto {
-		top:25% !important;
-		font-size:30px !important;
-	}*/
-	
-	#descargacurriculum{
-		margin-top: 2% !important;
+		font-size: 2.5rem !important;
 	}
 }
 
 @media (max-width: 625px) {
-	.descargacurriculum {
-		margin-top:5% !important;
-	}
+	
 }
 
 /* MOBILE */

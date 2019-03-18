@@ -1,5 +1,5 @@
 .trapezoid {
-    width: 4%;
+    width: 2em;
     height: 100px;
     -webkit-transform: skew(-30deg);
     -moz-transform: skew(-30deg);
@@ -8,7 +8,7 @@
     display: inline-block;
   }
   .trapezoid:first-child {
-    margin-left: 3%;
+    /*padding-left: 8em;*/
   }
   .trapezoid:nth-child(3) {
     width: 80%;
