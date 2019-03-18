@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { LandingComponent } from './landing/landing.component';
-import { TrayectoriaComponent } from './trayectoria/trayectoria.component';
-import { ProyectosComponent } from './proyectos/proyectos.component';
-import { FooterComponent } from './footer/footer.component';
-import { AptitudesComponent } from './aptitudes/aptitudes.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { ModalComponent } from './modal/modal.component';
+import { LandingComponent } from './views/layout/landing/landing.component';
+import { TrayectoriaComponent } from './views/layout/trayectoria/trayectoria.component';
+import { ProyectosComponent } from './views/layout/proyectos/proyectos.component';
+import { FooterComponent } from './views/components/footer/footer.component';
+import { AptitudesComponent } from './views/layout/aptitudes/aptitudes.component';
+import { ContactoComponent } from './views/layout/contacto/contacto.component';
+import { ModalProyectosComponent } from './views/modals/modal-proyectos/modal-proyectos.component';
+import { TrapezoideComponent } from './views/components/trapezoide/trapezoide.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ModalComponent } from './modal/modal.component';
     FooterComponent,
     AptitudesComponent,
     ContactoComponent,
-    ModalComponent
+    ModalProyectosComponent,
+    TrapezoideComponent
   ],
   imports: [
     BrowserModule

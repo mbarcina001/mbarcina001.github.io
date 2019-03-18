@@ -4,43 +4,8 @@
 }
 
 body{
-	margin: 0;
-	padding:0;
-}
-
-.trapezoid {
-  width: 2%;
-  height: 100px;
-  -webkit-transform: skew(-30deg);
-  -moz-transform: skew(-30deg);
-  -o-transform: skew(-30deg);
-  margin: 0;
-  display: inline-block;
-}
-.trapezoid:first-child {
-  margin-left: 3%;
-}
-.trapezoid:nth-child(3) {
-  width: 80%;
-  position: relative;
-  left: 20px;
-  top: -59px;
-}
-.trapezoid h1 {
-  -webkit-transform: skew(30deg);
-  -moz-transform: skew(30deg);
-  -o-transform: skew(30deg);
-  color: white;
-  position: relative;
-  left: 50px;
-  top:20px;
-  font-family:'Coolvetica';
-}
-.trapezoid.black {
-  background: black;
-}
-.trapezoid.white {
-  background: white;
+	margin: 0 !important;
+	padding:0 !important;
 }
 
 /* Small devices */

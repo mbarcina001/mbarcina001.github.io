@@ -1,0 +1,17 @@
+.error-msg {
+    color: #a94442;
+}
+.fix-error-icon {
+    top: 27px;
+}
+@media only screen and (min-width: 900px) and (max-width: 1199px)  {
+    p{
+        font-size:1rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    p{
+        margin-bottom:0rem !important;
+    }
+}

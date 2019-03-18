@@ -1,0 +1,31 @@
+<section id="proyectos" class="proyectos">
+	<app-trapezoide [nombreSeccion]="nombreSeccionProyectos"></app-trapezoide>
+
+	<article id="proyectosContent" class="proyectosContent">
+		<div class="gallery" *ngFor="let proyecto of proyectos" (click)="onSelect(proyecto);">
+			<div class="img-container">
+				<img class="gallery-img" [src]="proyecto.imgs[proyecto.imgindex]" alt={{proyecto.nombre}}>
+				<div class="overlay">
+					<div class="text">{{proyecto.nombre}}</div>
+				</div>
+			</div>
+		</div>
+	</article>
+</section>
+
+<section (window:resize)="onResize($event)" id="proyectosCarrera" class="proyectos">
+	<app-trapezoide [nombreSeccion]="nombreSeccionProyectosCarrera"></app-trapezoide>
+
+	<article id="proyectosCarreraContent" class="proyectosContent">
+		<div class="gallery" *ngFor="let proyectoCarrera of proyectosCarrera" (click)="onSelect(proyectoCarrera);">
+			<div class="img-container">
+				<img class="gallery-img" [src]="proyectoCarrera.imgs[proyectoCarrera.imgindex]" alt={{proyectoCarrera.nombre}}>
+				<div class="overlay">
+					<div class="text">{{proyectoCarrera.nombre}}</div>
+				</div>
+			</div>
+		</div>
+	</article>
+</section>
+
+<app-modal [proyecto]="selectedProyecto"></app-modal>
