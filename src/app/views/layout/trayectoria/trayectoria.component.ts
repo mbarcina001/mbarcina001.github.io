@@ -59,8 +59,12 @@ export class TrayectoriaComponent {
 
   constructor() { }
 
-  selectTrayectoria(ptrayectoria:Trayectoria){
+  public selectTrayectoria(ptrayectoria:Trayectoria){
     this.selectedTrayectoria=ptrayectoria;
+  }
+
+  public isMobile() : boolean{
+    return window.innerWidth <= 900;
   }
 
 }
