@@ -4,7 +4,7 @@ import { Aptitud } from '../../../models/aptitud';
 @Component({
   selector: 'app-aptitudes',
   templateUrl: './aptitudes.component.html',
-  styleUrls: ['./aptitudes.component.scss', '../../../../assets/styles/font-mfizz.css', '../../../../assets/styles/fontawesome-all.css',  '../../../../assets/styles/devicon.min.css']
+  styleUrls: ['./aptitudes.component.scss', '../../../../assets/styles/font-mfizz.css', '../../../../assets/styles/fontawesome-all.css', '../../../../assets/styles/fa-brands.min.css',  '../../../../assets/styles/devicon.min.css']
 })
 
 export class AptitudesComponent implements OnInit {
@@ -38,8 +38,13 @@ export class AptitudesComponent implements OnInit {
 			"icon"
 		),
 		new Aptitud(
+			"cordova",
+			"Cordova",
+			"icon img"
+		),
+		new Aptitud(
 			"fa fa-database",
-			"Data mining y R",
+			"Data mining",
 			"icon"
 		),
 		new Aptitud(
@@ -56,6 +61,11 @@ export class AptitudesComponent implements OnInit {
 			"devicon-html5-plain",
 			"HTML5",
 			"icon"
+		),
+		new Aptitud(
+			"ionic",
+			"Ionic",
+			"icon img"
 		),
 		new Aptitud(
 			"devicon-java-plain",
@@ -83,6 +93,11 @@ export class AptitudesComponent implements OnInit {
 			"icon"
 		),
 		new Aptitud(
+			"npm",
+			"NPM",
+			"icon img"
+		),
+		new Aptitud(
 			"devicon-photoshop-plain",
 			"Photoshop",
 			"icon"
@@ -96,6 +111,11 @@ export class AptitudesComponent implements OnInit {
 			"devicon-python-plain",
 			"Python",
 			"icon"
+		),
+		new Aptitud(
+			"rxjs",
+			"Rxjs",
+			"icon img"
 		),
 		new Aptitud(
 			"devicon-react-original",
@@ -118,9 +138,9 @@ export class AptitudesComponent implements OnInit {
 			"icon"
 		),
 		new Aptitud(
-			"icon-selenium",
+			"selenium",
 			"Selenium",
-			"icon"
+			"icon img"
 		),
 		new Aptitud(
 			"icon-spring",
