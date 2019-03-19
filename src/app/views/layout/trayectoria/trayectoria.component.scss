@@ -1,50 +1,110 @@
 #trayectoria{
     margin:50px;
 
-    .logos{
-        margin: 1.5em 3em;
+    .desktop{
+        .logos{
+            margin: 1.5em 3em;
+    
+            .logo-trayectoria{
+                width:100px; 
+                height:100px; 
+                display:block;
+                border: 5px solid black;
+                cursor:pointer;
+            }
+        }
+    
+        .info-trayectoria{
+            background-color:grey; 
+            height:400px;
+            padding: 2rem 4rem;
+            border: 5px dashed black;
+            width: 70%;
+            overflow-y:auto;
+
+            .date{
+                text-align:right;
+                font-weight: lighter;
+            }
+    
+            /* width */
+            &::-webkit-scrollbar {
+                width: 7px;
+            }
+            
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: black; 
+            }
+            
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555; 
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .info-trayectoria{
+                width: 60% !important;
+            }
+        }
+    }
+
+    .mobile{
+        margin-top: -3rem;
 
         .logo-trayectoria{
             width:100px; 
             height:100px; 
             display:block;
             border: 5px solid black;
+            margin:2rem;
             cursor:pointer;
         }
+
+        .info-trayectoria{
+            background-color:grey; 
+            height:400px;
+            padding: 1.5rem 3rem;
+            border: 5px dashed black;
+            width: 90%;
+            margin-left:auto;
+            margin-right:auto;
+            overflow-y:auto;
+
+            .date{
+                text-align:right;
+                font-weight: lighter;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .info-trayectoria{
+                padding: 1rem 2rem !important;
+            }
+
+            .logo-trayectoria{
+                margin:1rem !important;
+            }
+
+        }
+
+        @media (max-width: 480px) {
+            .info-trayectoria{
+                padding: 0.5rem 1rem !important;
+            }
+
+            .logo-trayectoria{
+                margin:0.5rem !important;
+            }
+        }
     }
 
-    .info-trayectoria{
-        background-color:grey; 
-        height:400px;
-        padding:15px;
-        border: 5px dashed black;
-        width: 70%;
-        overflow-y:auto;
-
-        /* width */
-        &::-webkit-scrollbar {
-            width: 7px;
-        }
-        
-        /* Track */
-        &::-webkit-scrollbar-track {
-            background: #f1f1f1; 
-        }
-        
-        /* Handle */
-        &::-webkit-scrollbar-thumb {
-            background: black; 
-        }
-        
-        /* Handle on hover */
-        &::-webkit-scrollbar-thumb:hover {
-            background: #555; 
-        }
-    }
+    
 }
 
-@media (max-width: 1200px) {
-    .info-trayectoria{
-        width: 60% !important;
-    }
-}
