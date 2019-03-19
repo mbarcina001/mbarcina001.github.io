@@ -265,8 +265,26 @@
 		}
 		
 		.texto{
-		    top: 25% !important;
+		  top: 25% !important;
 			font-size:20px !important;
 		}
+	}
+}
+
+@media (max-height: 680px) {
+	#trayectoria p{
+		margin-top: 3.5em !important;
+	}
+}
+
+@media (max-height: 630px) {
+	#landing-content #titulo{
+		margin-top: 1% !important;
+	}
+	#descargacurriculum{
+		margin-top: 1% !important;
+	}
+	#trayectoria p{
+		margin-top: 1.5em !important;
 	}
 }
