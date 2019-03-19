@@ -93,6 +93,21 @@ export class ProyectosComponent implements OnInit {
 			"No",
 			"No"
 		),
+		new Proyecto(
+			"p4",
+			"Getronics FMS",
+			"Aplicación multiplataforma para Android, iOS y navegadores destinada a su uso por parte de los técnicos de campo de Getronics. Recupera los tickets pendientes del técnico y le proporciona información sobre las tareas que tiene el técnico para ese día, las ubicaciones a las que se tiene que desplazar, los componentes necesarios, etc.",
+			["/Portfolio/assets/images/proyectos/fms1.PNG"],
+			0,
+			[
+				"Implementado con Angular 6, Ionic 3 y Cordova",
+				"Uso de diversos plugins de Cordova para el acceso de ficheros, uso de la cámara, lector de código de barras, etc.",
+				"Funciones de geolocalización y mapa.",
+				"Emplea un template adquirido especificamente como base para el proyecto y a partir del cual se han personalizado los estilos de la aplicación haciendo uso de HTML5+Ionic3 y CSS3"
+			],
+			"No",
+			"No"
+		)
 	];
 	
 	proyectosCarrera:Proyecto[] = [
