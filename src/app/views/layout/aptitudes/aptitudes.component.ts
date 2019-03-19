@@ -113,11 +113,6 @@ export class AptitudesComponent implements OnInit {
 			"icon"
 		),
 		new Aptitud(
-			"rxjs",
-			"Rxjs",
-			"icon img"
-		),
-		new Aptitud(
 			"devicon-react-original",
 			"ReactJS",
 			"icon"
@@ -131,6 +126,11 @@ export class AptitudesComponent implements OnInit {
 			"devicon-rails-plain",
 			"Ruby on rails",
 			"icon"
+		),
+		new Aptitud(
+			"rxjs",
+			"Rxjs",
+			"icon img"
 		),
 		new Aptitud(
 			"devicon-sass-plain",
