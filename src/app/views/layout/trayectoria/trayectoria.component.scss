@@ -58,13 +58,17 @@
     .mobile{
         margin-top: -3rem;
 
-        .logo-trayectoria{
-            width:100px; 
-            height:100px; 
-            display:block;
-            border: 5px solid black;
-            margin:2rem;
-            cursor:pointer;
+        .logos{
+            margin-bottom: 1.5em;
+
+            .logo-trayectoria{
+                width:100px; 
+                height:100px; 
+                display:block;
+                border: 5px solid black;
+                margin:2rem;
+                cursor:pointer;
+            }
         }
 
         .info-trayectoria{
@@ -80,6 +84,26 @@
             .date{
                 text-align:right;
                 font-weight: lighter;
+            }
+
+            /* width */
+            &::-webkit-scrollbar {
+                width: 7px;
+            }
+            
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: black; 
+            }
+            
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555; 
             }
         }
 
