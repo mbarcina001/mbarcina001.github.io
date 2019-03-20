@@ -1,22 +1,20 @@
 .trapezoid {
-    width: 2em;
-    height: 100px;
-    -webkit-transform: skew(-30deg);
-    -moz-transform: skew(-30deg);
-    -o-transform: skew(-30deg);
-    margin: 0;
-    display: inline-block;
-  }
-  .trapezoid:first-child {
-    /*padding-left: 8em;*/
-  }
-  .trapezoid:nth-child(3) {
+  width: 2em;
+  height: 100px;
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  margin: 0;
+  display: inline-block;
+
+  &:nth-child(3) {
     width: 80%;
     position: relative;
     left: 20px;
     top: -61px;
   }
-  .trapezoid h1 {
+
+  h1 {
     -webkit-transform: skew(30deg);
     -moz-transform: skew(30deg);
     -o-transform: skew(30deg);
@@ -26,9 +24,62 @@
     top:20px;
     font-family:'Coolvetica';
   }
-  .trapezoid.black {
-    background: black;
+}
+
+
+.trapezoid.black {
+  background: black;
+}
+
+.trapezoid.white {
+  background: white;
+}
+
+@media (max-width: 991px) {
+  .trapezoid { 
+    &:nth-child(3) {
+      width: 70vw !important;
+    }
   }
-  .trapezoid.white {
-    background: white;
+}
+
+@media (max-width: 940px) {
+  .trapezoid { 
+    &:nth-child(3) {
+      width: 65vw !important;
+    }
   }
+}
+
+/* SMALL DEVICES */
+@media (max-width: 767px) {
+  .trapezoid { 
+    &:nth-child(3) {
+      width: 60vw !important;
+    }
+  }
+}
+
+@media (max-width: 625px) {
+	.trapezoid { 
+    &:nth-child(3) {
+      width: 55vw !important;
+    }
+  }
+}
+
+@media (max-width: 552px) {
+	.trapezoid {
+    width:0em;
+
+    h1{
+      font-size: 2rem;
+      margin-top: 0.25em;
+      margin-left: -0.25em;
+    }
+    
+    &:nth-child(3) {
+      width: 55vw !important;
+    }
+  }
+}
