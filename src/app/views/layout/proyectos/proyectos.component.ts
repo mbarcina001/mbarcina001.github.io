@@ -129,14 +129,20 @@ export class ProyectosComponent implements OnInit {
 			"Juego: Arkanoid",
 			"Juego Arkanoid desarrollado en JavaScript para navegador web",
 			[
-				"/Portfolio/assets/images/proyectos/arkanoid0.JPG",
-				"/Portfolio/assets/images/proyectos/arkanoid1.JPG",
-				"/Portfolio/assets/images/proyectos/arkanoid2.JPG",
-				"/Portfolio/assets/images/proyectos/arkanoid3.JPG",
-				"/Portfolio/assets/images/proyectos/arkanoid4.JPG",
-				"/Portfolio/assets/images/proyectos/arkanoid5.JPG"
+				"/Portfolio/assets/images/proyectos/arkanoid0.png",
+				"/Portfolio/assets/images/proyectos/arkanoid1.png",
+				"/Portfolio/assets/images/proyectos/arkanoid2.png",
+				"/Portfolio/assets/images/proyectos/arkanoid3.png",
+				"/Portfolio/assets/images/proyectos/arkanoid4.png",
+				"/Portfolio/assets/images/proyectos/arkanoid5.png",
+				"/Portfolio/assets/images/proyectos/arkanoid6.png",
+				"/Portfolio/assets/images/proyectos/arkanoid7.png",
+				"/Portfolio/assets/images/proyectos/arkanoid8.png",
+				"/Portfolio/assets/images/proyectos/arkanoid9.png",
+				"/Portfolio/assets/images/proyectos/arkanoid10.png",
+				"/Portfolio/assets/images/proyectos/arkanoid11.png"
 			],
-			1,
+			11,
 			[
 				"Desarrollado en JavaScript",
 				"Incluye hasta 10 niveles",
