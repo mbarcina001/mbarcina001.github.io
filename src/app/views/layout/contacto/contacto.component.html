@@ -1,12 +1,16 @@
 <section id="contacto" class="contacto">
     <app-trapezoide [nombreSeccion]="nombreSeccion"></app-trapezoide>
 
-    <form>
-        <input id="nombre" class="form-control text-input" type="text" placeholder="nombre">
-        <input id="mail" class="form-control text-input" type="text" placeholder="mail">
-        <textarea class="form-control" rows="5" id="mensaje"  placeholder="mensaje"></textarea>
+    <form #myForm="ngForm">
+        <input id="nombre" name="nombre" class="form-control text-input" type="text" placeholder="nombre" required>
+        <app-error-campo [control]="nombre"></app-error-campo>
+        <input id="mail" name="mail" class="form-control text-input" type="text" placeholder="mail" required>
+        <app-error-campo [control]="mail"></app-error-campo>
+        <textarea id="mensaje" name="mensaje" class="form-control" rows="5" placeholder="mensaje" required></textarea>
+        <app-error-campo [control]="mensaje"></app-error-campo>
     </form>
-        <div class="row mt-4">
-            <button type="button" class="btn btn-dark">Enviar</button>
-        </div>
+
+    <div class="row mt-4">
+        <button type="button" class="btn btn-dark" (click)="enviar(myForm)">Enviar</button>
+    </div>
 </section>

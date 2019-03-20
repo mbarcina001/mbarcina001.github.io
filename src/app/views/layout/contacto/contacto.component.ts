@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule, NgForm, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -12,6 +13,12 @@ export class ContactoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public enviar(myForm: NgForm){
+    if (myForm.valid) {
+      console.log("Valid");
+    }
   }
 
 }

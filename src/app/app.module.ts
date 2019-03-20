@@ -12,6 +12,7 @@ import { ContactoComponent } from './views/layout/contacto/contacto.component';
 import { ModalProyectosComponent } from './views/modals/modal-proyectos/modal-proyectos.component';
 import { TrapezoideComponent } from './views/components/trapezoide/trapezoide.component';
 
+import { FormsModule, Validators, ReactiveFormsModule  } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,9 @@ import { TrapezoideComponent } from './views/components/trapezoide/trapezoide.co
     TrapezoideComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
