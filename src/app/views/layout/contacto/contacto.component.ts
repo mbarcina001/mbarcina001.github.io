@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule, NgForm, FormGroup } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
@@ -10,15 +10,18 @@ export class ContactoComponent implements OnInit {
 
   nombreSeccion:string = "Contacto";
 
+  nombre:string = "";
+
   constructor() { }
 
   ngOnInit() {
   }
 
   public enviar(myForm: NgForm){
+    myForm.control.markAsTouched();
+
     if (myForm.valid) {
       console.log("Valid");
     }
   }
-
 }

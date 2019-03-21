@@ -15,18 +15,6 @@ export class ErrorCampoComponent {
     'minlength': (params) => 'Longitud de campo incorrecta',
     'maxlength': (params) => 'Longitud de campo incorrecta',
     'onlyNumbers': (params) => params.message,
-    'fechaAntiguedad': (params) => params.message,
-    'fechaCaducidad': (params) => params.message,
-    'fechaNacimiento': (params) => params.message,
-    'formatoFecha': (params) => params.message,
-    'antiguedadBanco': (params) => params.message,
-    'antiguedadLaboral': (params) => params.message,
-    'grpCorreo': (params) => params.message,
-    'combo': (params) => params.message,
-    'numberMaxLength': (params) => params.message,
-    'numberMinLength': (params) => params.message,
-    'max': (params) => params.message,
-    'min': (params) => params.message,
     'emailInvalid': (params) => "El mail introducido no es correcto"
   };
 
@@ -36,9 +24,12 @@ export class ErrorCampoComponent {
  constructor(){}
 
  shouldShowErrors(): boolean {
-  return this.control &&
+  let rdo = this.control &&
     this.control.errors &&
     (this.control.touched);
+    console.log(this.control);
+    console.log(rdo);
+    return rdo;
  }
 
  /* Salta una vez por cada error de cada campo */

@@ -1,8 +1,8 @@
 <section id="contacto" class="contacto">
     <app-trapezoide [nombreSeccion]="nombreSeccion"></app-trapezoide>
 
-    <form #myForm="ngForm">
-        <input id="nombre" name="nombre" class="form-control text-input" type="text" placeholder="nombre" required>
+    <form #myForm="ngForm" novalidate>
+        <input id="nombre" #nombre="ngModel" [(ngModel)]="nombreText" name="nombre" class="form-control text-input" type="text" placeholder="nombre" required minlength="5">
         <app-error-campo [control]="nombre"></app-error-campo>
         <input id="mail" name="mail" class="form-control text-input" type="text" placeholder="mail" required>
         <app-error-campo [control]="mail"></app-error-campo>
