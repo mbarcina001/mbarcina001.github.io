@@ -4,18 +4,17 @@ import { AbstractControlDirective, AbstractControl } from '@angular/forms';
 @Component({
   selector: 'app-error-campo',
   templateUrl: './error-campo.component.html',
-  styleUrls: ['./error-campo.component.scss']
+  styleUrls: ['./error-campo.component.scss', '../../../../assets/styles/fontawesome-all.css']
 })
 
 export class ErrorCampoComponent {
 
   private static readonly errorMessages = {
     'required': () => 'Este campo es obligatorio',
-    'pattern': (params) => 'El valor introducido es incorrecto',
-    'minlength': (params) => 'Longitud de campo incorrecta',
-    'maxlength': (params) => 'Longitud de campo incorrecta',
-    'onlyNumbers': (params) => params.message,
-    'emailInvalid': (params) => "El mail introducido no es correcto"
+    'pattern': (params) => 'El mail introducido no es válido',
+    'minlength': (params) => 'Longitud de campo incorrecta. Mínimo: ' + params.requiredLength,
+    'maxlength': (params) => 'Longitud de campo incorrecta. Máximo: ' + params.requiredLength,
+    'onlyNumbers': (params) => params.message
   };
 
  @Input()

@@ -1,3 +1,4 @@
-<div *ngIf="shouldShowErrors()">
-  <p class="smaller" style="color: red" *ngFor="let error of listOfErrors()">{{error}}</p>
+<div class="error-message" *ngIf="shouldShowErrors()">
+  <i class="far fa-times-circle"></i>
+  <p *ngFor="let error of listOfErrors()">{{error}}</p>
 </div>

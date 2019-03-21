@@ -2,12 +2,45 @@
     <app-trapezoide [nombreSeccion]="nombreSeccion"></app-trapezoide>
 
     <form #myForm="ngForm" novalidate>
-        <input id="nombre" #nombre="ngModel" [(ngModel)]="nombreText" name="nombre" class="form-control text-input" type="text" placeholder="nombre" required minlength="5">
-        <app-error-campo [control]="nombre"></app-error-campo>
-        <input id="mail" name="mail" class="form-control text-input" type="text" placeholder="mail" required>
-        <app-error-campo [control]="mail"></app-error-campo>
-        <textarea id="mensaje" name="mensaje" class="form-control" rows="5" placeholder="mensaje" required></textarea>
-        <app-error-campo [control]="mensaje"></app-error-campo>
+        <div class="form-input">
+            <input 
+                id="nombre" 
+                #nombre="ngModel" 
+                [(ngModel)]="nombreText" 
+                name="nombre" 
+                class="form-control text-input" 
+                type="text" 
+                placeholder="nombre" 
+                required minlength="5"
+            />
+            <app-error-campo [control]="nombre"></app-error-campo>
+        </div>
+        <div class="form-input">
+            <input 
+                id="mail" 
+                #mail="ngModel" 
+                [(ngModel)]="mailText" 
+                name="mail" 
+                class="form-control text-input" 
+                type="text" 
+                placeholder="mail" 
+                required pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+            />
+            <app-error-campo [control]="mail"></app-error-campo>
+        </div>
+        <div class="form-input">
+            <textarea 
+                id="mensaje" 
+                #mensaje="ngModel" 
+                [(ngModel)]="mensajeText" 
+                name="mensaje" 
+                class="form-control" 
+                rows="5" 
+                placeholder="mensaje" 
+                required minlength="20"
+            ></textarea>
+            <app-error-campo [control]="mensaje"></app-error-campo>
+        </div>
     </form>
 
     <div class="row mt-4">
