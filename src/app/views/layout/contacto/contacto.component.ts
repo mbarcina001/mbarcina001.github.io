@@ -21,7 +21,8 @@ export class ContactoComponent implements OnInit {
     myForm.control.markAsTouched();
 
     if (myForm.valid) {
-      console.log("Valid");
+      myForm.ngSubmit.emit();
+      console.log("Submitted");
     }
   }
 }

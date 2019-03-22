@@ -23,12 +23,9 @@ export class ErrorCampoComponent {
  constructor(){}
 
  shouldShowErrors(): boolean {
-  let rdo = this.control &&
+  return this.control &&
     this.control.errors &&
     (this.control.touched);
-    console.log(this.control);
-    console.log(rdo);
-    return rdo;
  }
 
  /* Salta una vez por cada error de cada campo */
