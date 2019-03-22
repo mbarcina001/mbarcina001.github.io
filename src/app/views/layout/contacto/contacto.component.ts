@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contacto',
@@ -10,9 +11,11 @@ export class ContactoComponent implements OnInit {
 
   nombreSeccion:string = "Contacto";
 
-  nombre:string = "";
+  nombreText:string = "";
+  mailText:string = "";
+  mensajeText:string = "";
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
@@ -21,8 +24,21 @@ export class ContactoComponent implements OnInit {
     myForm.control.markAsTouched();
 
     if (myForm.valid) {
-      myForm.ngSubmit.emit();
-      console.log("Submitted");
+      console.log("Submitted - 1714");
+      let data = {
+        nombre: this.nombreText,
+        mail: this.mailText,
+        mensaje: this.mensajeText
+        
+      };
+      this.http.post('https://formspree.io/mbarcina001@gmail.com', JSON.stringify(data))
+        .subscribe(
+          (resp) => {
+            console.log(resp);
+          }, (err) => {
+            console.log("ERROR: " + err)
+          }
+        );
     }
   }
 }
