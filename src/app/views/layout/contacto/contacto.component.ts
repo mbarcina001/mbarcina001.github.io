@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contacto',
@@ -15,30 +16,37 @@ export class ContactoComponent implements OnInit {
   mailText:string = "";
   mensajeText:string = "";
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private toastr: ToastrService) { }
 
   ngOnInit() {
   }
 
   public enviar(myForm: NgForm){
     myForm.control.markAsTouched();
-
     if (myForm.valid) {
-      console.log("Submitted - 1714");
       let data = {
-        nombre: this.nombreText,
-        mail: this.mailText,
-        mensaje: this.mensajeText
+        name: this.nombreText,
+        email: this.mailText,
+        message: this.mensajeText
         
       };
-      this.http.post('https://jumprock.co/mail/mbarcina001', JSON.stringify(data))
+      let formData: FormData = new FormData(); 
+      formData.append('name', this.nombreText); 
+      formData.append('email', this.mailText); 
+      formData.append('message', this.mensajeText); 
+
+      /*this.http.post('https://jumprock.co/mail/mbarcina001', formData)
         .subscribe(
           (resp) => {
             console.log(resp);
           }, (err) => {
             console.log("ERROR: " + err)
           }
-        );
+      );*/
+      this.toastr.success('Hello world!', 'Toastr fun!', {
+        timeOut: 0,
+        positionClass: 'toast-bottom-right'
+      });
     }
   }
 }

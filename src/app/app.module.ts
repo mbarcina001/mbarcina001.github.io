@@ -15,6 +15,7 @@ import { TrapezoideComponent } from './views/components/trapezoide/trapezoide.co
 
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { ErrorCampoComponent } from './views/components/errorcampo/error-campo.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,9 @@ import { ErrorCampoComponent } from './views/components/errorcampo/error-campo.c
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    ToastrModule.forRoot({
+      preventDuplicates: true,
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
