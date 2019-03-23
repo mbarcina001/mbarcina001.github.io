@@ -31,7 +31,7 @@ export class ContactoComponent implements OnInit {
         mensaje: this.mensajeText
         
       };
-      this.http.post('https://formspree.io/mbarcina001@gmail.com', JSON.stringify(data))
+      this.http.post('https://jumprock.co/mail/mbarcina001', JSON.stringify(data))
         .subscribe(
           (resp) => {
             console.log(resp);
