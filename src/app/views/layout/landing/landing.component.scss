@@ -271,20 +271,40 @@
 	}
 }
 
+@media (min-height: 900px) {
+	#descargacurriculum{
+		margin-top:10em;
+	}
+
+	#trayectoria p{
+		margin-top: 15em !important;
+	}
+}
+
+@media (min-height: 800px) {
+	#descargacurriculum{
+		margin-top:7em;
+	}
+
+	#trayectoria p{
+		margin-top: 12em !important;
+	}
+}
+
 @media (max-height: 680px) {
 	#trayectoria p{
 		margin-top: 3.5em !important;
 	}
 }
 
-@media (max-height: 630px) {
+@media (max-height: 650px) {
 	#landing-content #titulo{
-		margin-top: 1% !important;
+		margin-top: 2em !important;
 	}
 	#descargacurriculum{
-		margin-top: 1% !important;
+		margin-top: 2em !important;
 	}
 	#trayectoria p{
-		margin-top: 1.5em !important;
+		margin-top: 3.5em !important;
 	}
 }
