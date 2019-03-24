@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { ToastrService } from 'ngx-toastr';
+import { ToastrService, GlobalConfig } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contacto',
@@ -22,31 +22,49 @@ export class ContactoComponent implements OnInit {
   }
 
   public enviar(myForm: NgForm){
-    myForm.control.markAsTouched();
+    for(let i in myForm.controls){
+      myForm.controls[i].updateValueAndValidity();
+      myForm.controls[i].markAsTouched();
+    }
+    
     if (myForm.valid) {
-      let data = {
-        name: this.nombreText,
-        email: this.mailText,
-        message: this.mensajeText
-        
-      };
+
       let formData: FormData = new FormData(); 
       formData.append('name', this.nombreText); 
       formData.append('email', this.mailText); 
       formData.append('message', this.mensajeText); 
 
-      /*this.http.post('https://jumprock.co/mail/mbarcina001', formData)
+      let options: GlobalConfig;
+      options = this.toastr.toastrConfig;
+      options.timeOut = 0;
+      options.positionClass = 'toast-bottom-right';
+
+      this.http.post('https://jumprock.co/mail/mbarcina001', formData)
         .subscribe(
           (resp) => {
-            console.log(resp);
+            this.toastr.show(
+              'Click para cerrar', 
+              'Enviado correctamente', 
+              options,
+              "toast-success"
+            );
+            this.resetForm(myForm);
           }, (err) => {
-            console.log("ERROR: " + err)
+            this.toastr.show(
+              'Click para cerrar', 
+              'Ha ocurrido un error', 
+              options,
+              "toast-error"
+            );
           }
-      );*/
-      this.toastr.success('Hello world!', 'Toastr fun!', {
-        timeOut: 0,
-        positionClass: 'toast-bottom-right'
-      });
+      );
     }
+  }
+
+  private resetForm(myForm: NgForm){
+    this.nombreText = "";
+    this.mailText = "";
+    this.mensajeText = "";
+    myForm.control.markAsUntouched();
   }
 }
