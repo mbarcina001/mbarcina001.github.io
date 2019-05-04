@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "serve": "ng serve --base-href \"/Portfolio/\" --open",
     "build": "ng build --prod --base-href \"https://mbarcina001.github.io/Portfolio/\"",
-    "ngh": "ngh --no-silent"
+    "ngh": "ngh --no-silent --message=\"Serving last commit changes\""
   },
   "private": true,
   "dependencies": {
