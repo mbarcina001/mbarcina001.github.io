@@ -39,6 +39,7 @@ export class ModalProyectosComponent implements OnInit {
 		$('#modalProyectos .modal-content').removeClass('animated slideOutRight'); 
 		$('#modalProyectos .modal-content').addClass('animated rollIn');
 		$('body').css("overflow","hidden");
+		this.proyectoIndex = 0;
 	}
   
 	ocultarModal() : void {
