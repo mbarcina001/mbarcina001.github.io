@@ -98,7 +98,7 @@ export class ProyectosComponent implements OnInit {
 			"Getronics FMS",
 			"Aplicación multiplataforma para Android, iOS y navegadores destinada a su uso por parte de los técnicos de campo de Getronics. Recupera los tickets pendientes del técnico y le proporciona información sobre las tareas que tiene el técnico para ese día, las ubicaciones a las que se tiene que desplazar, los componentes necesarios, etc.",
 			[
-				"/Portfolio/assets/images/proyectos/fms1.png",
+				"/Portfolio/assets/images/proyectos/fms1.PNG",
 				"/Portfolio/assets/images/proyectos/fms2.png",
 				"/Portfolio/assets/images/proyectos/fms3.png",
 				"/Portfolio/assets/images/proyectos/fms4.png",
