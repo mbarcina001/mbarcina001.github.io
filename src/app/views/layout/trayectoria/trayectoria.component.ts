@@ -27,29 +27,20 @@ export class TrayectoriaComponent {
       "Informática de Euskadi",
       "Programador",
       "2017-2018",
-      `<p>Además del matenimiento de los proyectos ya existentes dedicados a ofrecer servicio a Caixabank Consumer Finance y basados 
-      en Java y Struts, estuve involucrado principalmente en 2 proyectos:</p>
-      <ul>
-        <li><b>Minisite de MediaMarkt:</b> Realizado en Java y Struts se trata de una aplicación web dedicada a la contratación de la tarjeta 
-        MediaMarkt Club Card. Incluye servicios REST así como una estructura multimarca diseñada especificamente con el objetivo de poder 
-        alojar otras marcas (Gas natural, Ventajon, etc) de modo que tuviesen un diseño propio y unos pasos para realizar la solicitud 
-        a elección del cliente.</li>
-        <li><b>Digitalización TCF:</b> Aplicación web implementada en Angular4 para la compra de dispositivos móviles financiados por Telefónica 
-        Consumer Finance. Este desarrollo cuenta con un Middleware programado en Java que hace las llamadas correspondientes a los 
-        servicios que sirven de apoyo a la aplicación. Dicho Middleware expone los servicios necesarios en REST para que puedan ser 
-        invocados desde el código Angular4 y realiza diferentes llamadas a servicios empleando Axis, Jaxb y Soap con cabecera de 
-        seguridad y firma entre otros.</li>
-      </ul>
-      <p>Por otra parte, hice otros proyectos de menor envergadura con otros lenguajes de programación como Spring, así como diferentes 
-      plugins de Java como Selenium</p>`,
+      `<p>En esta empresa hice labores de mantenimiento de los proyectos web ya existentes dedicados a ofrecer servicio a <span class="font-weight-bold">Caixabank Consumer Finance</span> y basados en Java y Struts en la parte dinámica; jQuery en la parte estática; y Ajax para conectar entre ambas partes cuando era necesario,</p>
+      <p>Por otra parte, estuve involucrado en el desarrollo e implementación de 2 proyectos desde cero:</p>
+      <p><span class="font-weight-bold">Minisite de MediaMarkt:</span> Realizado en Java y Struts se trata de una aplicación web dedicada a la contratación de la tarjeta MediaMarkt Club Card. Incluye servicios REST así como una estructura multimarca diseñada especificamente con el objetivo de poder alojar otras marcas (Gas natural, Ventajon, etc) de modo que tuviesen un diseño propio y unos pasos para realizar la solicitud a elección del cliente.</p>
+      <p><span class="font-weight-bold">Digitalización TCF:</span> Aplicación web implementada en Angular4 para la compra de dispositivos móviles financiados por Telefónica Consumer Finance. Este desarrollo cuenta con un Middleware programado en Java que hace las llamadas correspondientes a los servicios que sirven de apoyo a la aplicación. Dicho Middleware expone los servicios necesarios en REST para que puedan ser invocados desde el código Angular4 y realiza diferentes llamadas a servicios empleando Axis, Jaxb y Soap con cabecera de seguridad y firma entre otros.</p>
+      <p>Por otra parte, hice otros proyectos de menor envergadura con otros lenguajes de programación como Spring, así como diferentes plugins de Java como Selenium.</p>`,
       "/Portfolio/assets/images/logos/ide.png"
     ),
     new Trayectoria(
       "Getronics",
       "Programador",
       "2019-Actualidad",
-      `<p>En Getronics me he incorporado al proyecto FMS (Field Management Services). En este proyecto estamos implementando una aplicación 
-      multiplataforma para Android, iOS y navegador mediante Angular 6, Ionic 3 y Cordova.</p>`,
+      `<p>Realicé el proyecto <span class="font-weight-bold">FMS (Field Management Services)</span>, una aplicación multiplataforma para Android, iOS y navegador implementada mediante Angular 6, Ionic 3 y Cordova.</p>
+      <p>Una vez finalizado dicho proyecto, me incorporé al desarrollo de una web para <span class="font-weight-bold">Celsa</span> implementada en AngularJS, con el uso de Gulp para el preprocesado de los estilos y los scripts, y Protractor para los tests unitarios.</p>
+      <p>También he estado involucrado en la maquetación de la nueva página web de <span class="font-weight-bold">Booker</span> (HTML5, CS3 y Bootstrap).</p>`,
       "/Portfolio/assets/images/logos/getronics.png"
     )
   ]
