@@ -32,6 +32,11 @@ export class AptitudesComponent implements OnInit {
 			"ASP.NET",
 			"icon"
 		),
+		/*new Aptitud(
+			"azure",
+			"Azure",
+			"icon img"
+		),*/
 		new Aptitud(
 			"devicon-css3-plain",
 			"CSS3",
@@ -58,9 +63,19 @@ export class AptitudesComponent implements OnInit {
 			"icon"
 		),
 		new Aptitud(
+			"devicon-gulp-plain",
+			"Gulp",
+			"icon"
+		),
+		new Aptitud(
 			"devicon-html5-plain",
 			"HTML5",
 			"icon"
+		),
+		new Aptitud(
+			"hibernate",
+			"Hibernate",
+			"icon img"
 		),
 		new Aptitud(
 			"ionic",
@@ -81,6 +96,11 @@ export class AptitudesComponent implements OnInit {
 			"devicon-jquery-plain",
 			"jQuery",
 			"icon"
+		),
+		new Aptitud(
+			"maven",
+			"Maven",
+			"icon img"
 		),
 		new Aptitud(
 			"devicon-mysql-plain",
@@ -118,6 +138,11 @@ export class AptitudesComponent implements OnInit {
 			"icon"
 		),
 		new Aptitud(
+			"rest",
+			"Servicios REST",
+			"icon img"
+		),
+		new Aptitud(
 			"devicon-ruby-plain",
 			"Ruby",
 			"icon"
@@ -144,9 +169,24 @@ export class AptitudesComponent implements OnInit {
 		),
 		new Aptitud(
 			"icon-spring",
-			"Spring, Struts y Rest",
+			"Spring",
 			"icon"
 		),
+		/*new Aptitud(
+			"struts",
+			"Struts",
+			"icon img"
+		),
+		new Aptitud(
+			"svn",
+			"SVN",
+			"icon img"
+		),
+		new Aptitud(
+			"tfs",
+			"TFS",
+			"icon img"
+		),*/
 		new Aptitud(
 			"devicon-typescript-plain",
 			"TypeScript",

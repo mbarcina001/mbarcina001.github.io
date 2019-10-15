@@ -51,24 +51,52 @@
 					margin-left: auto;
 					margin-right: auto;
 				}
-				&[class*="selenium"] {
-					mask-image: url(/assets/images/icons/selenium.png);
-					background-color: grey;
-				}
-				&[class*="ionic"] {
-					mask-image: url(/assets/images/icons/ionic.png);
+				&[class*="azure"] {
+					mask-image: url(/assets/images/icons/azure.png);
 					background-color: white;
 				}
 				&[class*="cordova"] {
 					mask-image: url(/assets/images/icons/cordova.png);
 					background-color: grey;
 				}
+				&[class*="hibernate"] {
+					mask-image: url(/assets/images/icons/hibernate.png);
+					background-color: grey;
+				}
+				&[class*="ionic"] {
+					mask-image: url(/assets/images/icons/ionic.png);
+					background-color: white;
+				}
+				&[class*="maven"] {
+					mask-image: url(/assets/images/icons/maven.png);
+					background-color: white;
+				}
+				&[class*="npm"] {
+					mask-image: url(/assets/images/icons/npm.png);
+					background-color: grey;
+				}
+				&[class*="rest"] {
+					mask-image: url(/assets/images/icons/rest.png);
+					background-color: white;
+				}
 				&[class*="rxjs"] {
 					mask-image: url(/assets/images/icons/rxjs.png);
 					background-color: grey;
 				}
-				&[class*="npm"] {
-					mask-image: url(/assets/images/icons/npm.png);
+				&[class*="selenium"] {
+					mask-image: url(/assets/images/icons/selenium.png);
+					background-color: grey;
+				}
+				&[class*="struts"] {
+					mask-image: url(/assets/images/icons/struts.png);
+					background-color: grey;
+				}
+				&[class*="svn"] {
+					mask-image: url(/assets/images/icons/svn.png);
+					background-color: grey;
+				}
+				&[class*="tfs"] {
+					mask-image: url(/assets/images/icons/tfs.png);
 					background-color: white;
 				}
 			}

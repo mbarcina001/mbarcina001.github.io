@@ -28,4 +28,19 @@
 	</article>
 </section>
 
+<section (window:resize)="onResize($event)" id="otrosProyectos" class="proyectos">
+	<app-trapezoide [nombreSeccion]="nombreSeccionOtrosProyectos"></app-trapezoide>
+
+	<article id="otrosProyectosContent" class="proyectosContent">
+		<div class="gallery" *ngFor="let otroProyecto of otrosProyectos" (click)="onSelect(otroProyecto);">
+			<div class="img-container">
+				<img class="gallery-img" [src]="otroProyecto.imgs[otroProyecto.imgindex]" alt={{otroProyecto.nombre}}>
+				<div class="overlay">
+					<div class="text">{{otroProyecto.nombre}}</div>
+				</div>
+			</div>
+		</div>
+	</article>
+</section>
+
 <app-modal [proyecto]="selectedProyecto"></app-modal>

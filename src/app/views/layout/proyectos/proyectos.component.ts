@@ -12,6 +12,7 @@ export class ProyectosComponent implements OnInit {
 
 	nombreSeccionProyectos:string = "Proyectos";
 	nombreSeccionProyectosCarrera:string = "Proyectos Carrera";
+	nombreSeccionOtrosProyectos:string = "Otros Proyectos";
     selectedProyecto:Proyecto;
 	@ViewChild(ModalProyectosComponent) 
 	private modal:ModalProyectosComponent;
@@ -244,6 +245,28 @@ export class ProyectosComponent implements OnInit {
 			"No"
 		)
 	];
+
+	otrosProyectos:Proyecto[] = [
+		new Proyecto(
+			"op1",
+			"App: Pokedex",
+			"Aplicación multiplataforma que simula una pokédex. Realizada para un proceso de selección.",
+			[
+				"/Portfolio/assets/images/proyectos/pokedex1.jpg",
+				"/Portfolio/assets/images/proyectos/pokedex2.jpg",
+				"/Portfolio/assets/images/proyectos/pokedex3.jpg"
+			],
+			0,
+			[
+				"Implementada mediante Ionic y Angular",
+				"Consume servicios REST para la obtención de datos",
+				"Los idiomas se establecen de forma dinámica",
+				"App Responsive"
+			],
+			"gitlink",
+			"https://github.com/mbarcina001/pokedex"
+		)
+	]
   
 	constructor(private cdRef:ChangeDetectorRef) { }
 
