@@ -1,10 +1,10 @@
 <section id="trayectoria" class="trayectoria">
     <app-trapezoide [nombreSeccion]="nombreSeccion"></app-trapezoide>
 
-    <div class="desktop row" *ngIf="!isMobile()">
-        <div class="logos">
+    <div class="desktop" *ngIf="!isMobile()">
+        <div class="logos d-flex justify-content-center">
             <img *ngFor="let trayectoria of this.listaTrayectorias" 
-                class="rounded-circle mb-4 logo-trayectoria" 
+                class="rounded-circle mb-4 mr-2 ml-2 logo-trayectoria" 
                 [src]="trayectoria.imagen" 
                 (click)="selectTrayectoria(trayectoria)">
         </div>

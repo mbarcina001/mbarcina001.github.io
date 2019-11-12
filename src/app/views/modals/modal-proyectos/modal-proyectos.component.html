@@ -39,32 +39,7 @@
 				</ul>
 			</div>
 			
-			<div class="link-container" *ngIf="this.proyecto.tipolink==='arklink'">
-				<a class="link arklink" href="{{this.proyecto.enlace}}" target="_blank">
-					Enlace al juego
-				</a>
-			</div>
-			
-			<div class="link-container" *ngIf="this.proyecto.tipolink==='gitlink'">
-				<a class="link gitlink" href="{{this.proyecto.enlace}}" target="_blank">
-					<i class="fab fa-github fa-2x"></i> Enlace en Github
-				</a>
-			</div>
-			
-			<div class="link-container" *ngIf="this.proyecto.tipolink==='IXA'">
-				<p><i>Este proyecto es propiedad del grupo de investigación IXA de la UPV/EHU, y su código no se encuentra disponible para ser mostrado de forma pública.</i></p>
-			</div>
-			
-			<div class="link-container" *ngIf="this.proyecto.tipolink==='mmlink'">
-				<a class="link mmlink" href="{{this.proyecto.enlace}}" target="_blank">
-					Enlace a la web
-				</a>
-			</div>
-			
-			<div class="link-container" *ngIf="this.proyecto.tipolink==='No'">
-				<p><i>Enlaces no disponibles.</i></p>
-			</div>
-			
+			<app-modal-proyecto-link [proyecto]="proyecto"></app-modal-proyecto-link>
 		</div>
 	</div>
 </div>

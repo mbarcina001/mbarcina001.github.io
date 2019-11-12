@@ -18,8 +18,10 @@
             height:400px;
             padding: 2rem 4rem;
             border: 5px dashed black;
-            width: 70%;
+            width: 90%;
             overflow-y:auto;
+            margin-left:auto;
+            margin-right:auto;
 
             .date{
                 text-align:right;
@@ -59,8 +61,6 @@
     }
 
     .mobile{
-        margin-top: -3rem;
-
         .logos{
             margin-bottom: 1.5em;
 
@@ -75,7 +75,6 @@
         }
 
         .info-trayectoria{
-            background-color:grey; 
             height:400px;
             padding: 1.5rem 3rem;
             border: 5px dashed black;
@@ -119,6 +118,13 @@
                 margin:1rem !important;
             }
 
+        }
+
+        @media (max-width: 650px) {
+            .logo-trayectoria{
+                width: 65px !important;
+                height: 65px !important;
+            }
         }
 
         @media (max-width: 480px) {

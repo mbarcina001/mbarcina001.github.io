@@ -37,11 +37,18 @@ export class TrayectoriaComponent {
     new Trayectoria(
       "Getronics",
       "Programador",
-      "2019-Actualidad",
+      "2019",
       `<p>Realicé el proyecto <span class="font-weight-bold">FMS (Field Management Services)</span>, una aplicación multiplataforma para Android, iOS y navegador implementada mediante Angular 6, Ionic 3 y Cordova.</p>
       <p>Una vez finalizado dicho proyecto, me incorporé al desarrollo de una web para <span class="font-weight-bold">Celsa</span> implementada en AngularJS, con el uso de Gulp para el preprocesado de los estilos y los scripts, y Protractor para los tests unitarios.</p>
       <p>También he estado involucrado en la maquetación de la nueva página web de <span class="font-weight-bold">Booker</span> (HTML5, CS3 y Bootstrap).</p>`,
       "/Portfolio/assets/images/logos/getronics.png"
+    ),
+    new Trayectoria(
+      "Bilbomática",
+      "Programador",
+      "2019-Actualidad",
+      `<p></p>`,
+      "/Portfolio/assets/images/logos/bilbomatica.png"
     )
   ]
 

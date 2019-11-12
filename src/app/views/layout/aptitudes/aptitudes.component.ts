@@ -154,7 +154,7 @@ export class AptitudesComponent implements OnInit {
 		),
 		new Aptitud(
 			"rxjs",
-			"Rxjs",
+			"Rxjs y Ngrx",
 			"icon img"
 		),
 		new Aptitud(

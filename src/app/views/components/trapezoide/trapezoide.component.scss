@@ -4,11 +4,10 @@
   -webkit-transform: skew(-30deg);
   -moz-transform: skew(-30deg);
   -o-transform: skew(-30deg);
-  margin: 0;
   display: inline-block;
 
   &:nth-child(3) {
-    width: 80%;
+    width: 40%;
     position: relative;
     left: 20px;
     top: -61px;
@@ -56,30 +55,28 @@
   .trapezoid { 
     &:nth-child(3) {
       width: 60vw !important;
+      top: -69px;
+      left: 50px;
+    }
+
+    h1{
+      font-size: 2rem;
+      top: 28px;
     }
   }
 }
 
-@media (max-width: 625px) {
-	.trapezoid { 
-    &:nth-child(3) {
-      width: 55vw !important;
-    }
-  }
-}
 
 @media (max-width: 552px) {
 	.trapezoid {
     width:0em;
 
     h1{
-      font-size: 2rem;
       margin-top: 0.25em;
       margin-left: -0.25em;
-    }
-    
-    &:nth-child(3) {
-      width: 55vw !important;
+      -webkit-transform: skew(30deg);
+      -moz-transform: skew(15deg);
+      -o-transform: skew(15deg);
     }
   }
 }

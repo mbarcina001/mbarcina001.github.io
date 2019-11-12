@@ -1,42 +1,12 @@
-<section id="proyectos" class="proyectos">
+<section (window:resize)="onResize($event)" class="proyectos">
 	<app-trapezoide [nombreSeccion]="nombreSeccionProyectos"></app-trapezoide>
 
-	<article id="proyectosContent" class="proyectosContent">
+	<article class="proyectosContent">
 		<div class="gallery" *ngFor="let proyecto of proyectos" (click)="onSelect(proyecto);">
 			<div class="img-container">
 				<img class="gallery-img" [src]="proyecto.imgs[proyecto.imgindex]" alt={{proyecto.nombre}}>
 				<div class="overlay">
 					<div class="text">{{proyecto.nombre}}</div>
-				</div>
-			</div>
-		</div>
-	</article>
-</section>
-
-<section (window:resize)="onResize($event)" id="proyectosCarrera" class="proyectos">
-	<app-trapezoide [nombreSeccion]="nombreSeccionProyectosCarrera"></app-trapezoide>
-
-	<article id="proyectosCarreraContent" class="proyectosContent">
-		<div class="gallery" *ngFor="let proyectoCarrera of proyectosCarrera" (click)="onSelect(proyectoCarrera);">
-			<div class="img-container">
-				<img class="gallery-img" [src]="proyectoCarrera.imgs[proyectoCarrera.imgindex]" alt={{proyectoCarrera.nombre}}>
-				<div class="overlay">
-					<div class="text">{{proyectoCarrera.nombre}}</div>
-				</div>
-			</div>
-		</div>
-	</article>
-</section>
-
-<section (window:resize)="onResize($event)" id="otrosProyectos" class="proyectos">
-	<app-trapezoide [nombreSeccion]="nombreSeccionOtrosProyectos"></app-trapezoide>
-
-	<article id="otrosProyectosContent" class="proyectosContent">
-		<div class="gallery" *ngFor="let otroProyecto of otrosProyectos" (click)="onSelect(otroProyecto);">
-			<div class="img-container">
-				<img class="gallery-img" [src]="otroProyecto.imgs[otroProyecto.imgindex]" alt={{otroProyecto.nombre}}>
-				<div class="overlay">
-					<div class="text">{{otroProyecto.nombre}}</div>
 				</div>
 			</div>
 		</div>

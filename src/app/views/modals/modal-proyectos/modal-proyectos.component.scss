@@ -1,10 +1,3 @@
-@font-face {
-	font-family: "MMTextPro-Semibold";
-	src: url("/assets/webfonts/MMTextProWebTT-Bold.eot?") format("eot"),
-		 url("/assets/webfonts/MMTextProWebTT-Bold.woff") format("woff"),
-		 url("/assets/webfonts/MMTextProWebTT-Bold.ttf") format("truetype"),
-}
-
 #modalProyectos {
 	.modal-content{
 		position: fixed;
@@ -127,50 +120,6 @@
 			
 			.textoCaption{
 				margin: 20px 20px;
-			}
-			
-			.link-container {
-				position: absolute;
-				text-align: center;
-				width: 100%;
-				z-index: 2;
-				margin-bottom:20px;
-				
-				.link{
-					color: white;
-					width: 250px;
-					border-radius: 300px;
-					text-decoration: none;
-					display: block;
-					margin: 20px auto 20px auto;
-					text-align: center;
-					padding: 20px;
-					    text-align: center;
-					
-					i {
-						margin-right: 20px;
-					}
-				}
-				
-				.arklink {
-					background-color: #00edc5;
-					width:80%;
-				}
-				
-				.gitlink {
-					background-color: #000;
-					width:80%;
-				}
-				
-				.mmlink {
-					background-color: #DF0000;
-					font-family: MMTextPro-Semibold;
-				}
-				
-				p{
-					margin-left:10px;
-					margin-right:10px;
-				}
 			}
 		}
 	}

@@ -1,18 +1,6 @@
 #aptitudes{
-	margin-top: 50px;
-
-	app-trapezoide{
-		color: red;
-		margin-left: 50px !important;
-
-		div{
-			margin-left: 50px !important;
-		}
-	}
-
 	#aptitudes-content{
 		display: grid;
-		margin-top: -40px;
 		grid-template-columns: repeat(7, 1fr);
 		grid-auto-rows: 110px;
 		

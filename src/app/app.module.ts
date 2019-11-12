@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { ErrorCampoComponent } from './views/components/errorcampo/error-campo.component';
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalProyectoLinkComponent } from './views/modals/modal-proyectos/modal-proyecto-link/modal-proyecto-link.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactoComponent,
     ModalProyectosComponent,
     TrapezoideComponent,
-    ErrorCampoComponent
+    ErrorCampoComponent,
+    ModalProyectoLinkComponent
   ],
   imports: [
     BrowserModule,
