@@ -119,7 +119,7 @@ export class AppComponent {
 			],
 			"No",
 			"No"
-		)/*,
+		),
 		new Proyecto(
 			"p5",
 			"SMED",
@@ -147,20 +147,19 @@ export class AppComponent {
 			"Maquetación web: Booker",
 			"Maquetación de la nueva página web de Booker. HTML5, CSS y Bootstrap.",
 			[
-				"/Portfolio/assets/images/proyectos/booker1.PNG",
-				"/Portfolio/assets/images/proyectos/booker2.PNG",
-				"/Portfolio/assets/images/proyectos/booker3.PNG",
-				"/Portfolio/assets/images/proyectos/booker4.PNG",
-				"/Portfolio/assets/images/proyectos/booker5.PNG",
-				"/Portfolio/assets/images/proyectos/booker6.PNG",
-				"/Portfolio/assets/images/proyectos/booker7.PNG",
-				"/Portfolio/assets/images/proyectos/booker8.PNG"
+				"/Portfolio/assets/images/proyectos/booker1.png",
+				"/Portfolio/assets/images/proyectos/booker2.png",
+				"/Portfolio/assets/images/proyectos/booker3.png",
+				"/Portfolio/assets/images/proyectos/booker4.png",
+				"/Portfolio/assets/images/proyectos/booker5.png",
+				"/Portfolio/assets/images/proyectos/booker6.png",
+				"/Portfolio/assets/images/proyectos/booker7.png"
 			],
-			1,
+			0,
 			[],
 			"No",
 			"No"
-		)*/
+		)
 	];
 	
 	proyectosCarrera:Proyecto[] = [
@@ -323,7 +322,7 @@ export class AppComponent {
 			"SpringMarket",
 			"Página web para ecommerce",
 			[
-				"/Portfolio/assets/images/proyectos/springmarket1.PNG"
+				"/Portfolio/assets/images/proyectos/springmarket1.png"
 			],
 			0,
 			[

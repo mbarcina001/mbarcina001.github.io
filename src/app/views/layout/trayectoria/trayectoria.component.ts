@@ -47,7 +47,7 @@ export class TrayectoriaComponent {
       "Bilbomática",
       "Programador",
       "2019-Actualidad",
-      `<p></p>`,
+      `<p>Estoy involucrado un proyecto en Angular 8 y Ngrx.</p>`,
       "/Portfolio/assets/images/logos/bilbomatica.png"
     )
   ]
