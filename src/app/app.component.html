@@ -1,10 +1,13 @@
 ﻿<app-landing></app-landing>
-<app-trayectoria></app-trayectoria>
+
+<app-trayectoria [listaTrayectorias]=this.listaTrayectorias></app-trayectoria>
 
 <app-proyectos [proyectos]="this.proyectos" [nombreSeccionProyectos]="'Proyectos'"></app-proyectos>
 <app-proyectos [proyectos]="this.proyectosCarrera" [nombreSeccionProyectos]="'Proyectos Carrera'"></app-proyectos>
 <app-proyectos [proyectos]="this.otrosProyectos" [nombreSeccionProyectos]="'Otros Proyectos'"></app-proyectos>
 
-<app-aptitudes></app-aptitudes>
+<app-aptitudes [aptitudes]="this.aptitudes"></app-aptitudes>
+
 <app-contacto></app-contacto>
+
 <app-footer></app-footer>

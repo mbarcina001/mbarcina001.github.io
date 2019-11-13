@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Proyecto } from './models/proyecto';
+import { Aptitud } from './models/aptitud';
+import { Trayectoria } from './models/trayectoria';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +9,51 @@ import { Proyecto } from './models/proyecto';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+	title = 'app';
+	
+	listaTrayectorias:Trayectoria[]=[
+		new Trayectoria(
+		  "UPV/EHU",
+		  "Grado en Ingeniería Informática de Gestión y Sistemas de Información",
+		  "2011-2016",
+		  `<p>Durante la carrera desarrollé gran parte de mis aptitudes actuales. Aprendí diversos lenguajes de programación (ADA, JAVA y Python), 
+		  programación web (HTML5, CSS3, JavaScript, JSP, etc) así como diseño y administración de bases de datos (MySQL). También desarrollé 
+		  ciertas aptitudes en Tecnología Artifical y Minería de datos, siendo este último el campo en el que basé mi Trabajo de Fin de Grado 
+		  titulado "Aprendizaje semisupervisado: Una aplicación en la detección de entidades médicas".</p>
+		  <p> Además de lo enseñado en la carrera también aprendí por mi cuenta otros lenguajes de programación que me resultaban interesantes 
+		  como AngularJS, React, Ruby y Spring entre otros.</p>`,
+		  "/Portfolio/assets/images/logos/ehu.png"
+		),
+		new Trayectoria(
+		  "Informática de Euskadi",
+		  "Programador",
+		  "2017-2018",
+		  `<p>En esta empresa hice labores de mantenimiento de los proyectos web ya existentes dedicados a ofrecer servicio a <span class="font-weight-bold">Caixabank Consumer Finance</span> y basados en Java y Struts en la parte dinámica; jQuery en la parte estática; y Ajax para conectar entre ambas partes cuando era necesario,</p>
+		  <p>Por otra parte, estuve involucrado en el desarrollo e implementación de 2 proyectos desde cero:</p>
+		  <p><span class="font-weight-bold">Minisite de MediaMarkt:</span> Realizado en Java y Struts se trata de una aplicación web dedicada a la contratación de la tarjeta MediaMarkt Club Card. Incluye servicios REST así como una estructura multimarca diseñada especificamente con el objetivo de poder alojar otras marcas (Gas natural, Ventajon, etc) de modo que tuviesen un diseño propio y unos pasos para realizar la solicitud a elección del cliente.</p>
+		  <p><span class="font-weight-bold">Digitalización TCF:</span> Aplicación web implementada en Angular4 para la compra de dispositivos móviles financiados por Telefónica Consumer Finance. Este desarrollo cuenta con un Middleware programado en Java que hace las llamadas correspondientes a los servicios que sirven de apoyo a la aplicación. Dicho Middleware expone los servicios necesarios en REST para que puedan ser invocados desde el código Angular4 y realiza diferentes llamadas a servicios empleando Axis, Jaxb y Soap con cabecera de seguridad y firma entre otros.</p>
+		  <p>Por otra parte, hice otros proyectos de menor envergadura con otros lenguajes de programación como Spring, así como diferentes plugins de Java como Selenium.</p>`,
+		  "/Portfolio/assets/images/logos/ide.png"
+		),
+		new Trayectoria(
+		  "Getronics",
+		  "Programador",
+		  "2019",
+		  `<p>Realicé el proyecto <span class="font-weight-bold">FMS (Field Management Services)</span>, una aplicación multiplataforma para Android, iOS y navegador implementada mediante Angular 6, Ionic 3 y Cordova.</p>
+		  <p>Una vez finalizado dicho proyecto, me incorporé al desarrollo de una web para <span class="font-weight-bold">Celsa</span> implementada en AngularJS, con el uso de Gulp para el preprocesado de los estilos y los scripts, y Protractor para los tests unitarios.</p>
+		  <p>También he estado involucrado en la maquetación de la nueva página web de <span class="font-weight-bold">Booker</span> (HTML5, CS3 y Bootstrap).</p>`,
+		  "/Portfolio/assets/images/logos/getronics.png"
+		),
+		new Trayectoria(
+		  "Bilbomática",
+		  "Programador",
+		  "2019-Actualidad",
+		  `<p>Estoy involucrado un proyecto en Angular 8 y Ngrx.</p>`,
+		  "/Portfolio/assets/images/logos/bilbomatica.png"
+		)
+	];
 
-  proyectos:Proyecto[] = [
+    proyectos:Proyecto[] = [
 		new Proyecto(
 			"p1",
 			"Webs CCF",
@@ -332,10 +376,194 @@ export class AppComponent {
 				"Empleo de Spring Security para la identificación de usuarios",
 				"Utiliza Spring AOT",
 				"Hace uso de Spring Boot Actuator para la adición de nuevos endpoints relacionados con la aplicación, y Spring Boot Security para restringir el acceso de estos endpoints a usuarios identificados",
-				"Manejo de dependencias con Maven"
+				"Manejo de dependencias con Maven",
+				"Uso de templates Thymeleaf"
 			],
 			"desarrollo",
 			"No"
 		)
 	]
+
+	aptitudes : Aptitud[] = [
+		new Aptitud(
+			"devicon-android-plain",
+			"Android",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-angularjs-plain",
+			"Angular",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-apache-plain",
+			"Apache",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-dot-net-plain",
+			"ASP.NET",
+			"icon"
+		),
+		/*new Aptitud(
+			"azure",
+			"Azure",
+			"icon img"
+		),*/
+		new Aptitud(
+			"devicon-css3-plain",
+			"CSS3",
+			"icon"
+		),
+		new Aptitud(
+			"cordova",
+			"Cordova",
+			"icon img"
+		),
+		new Aptitud(
+			"fa fa-database",
+			"Data mining",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-git-plain",
+			"Git",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-google-plain",
+			"Google Tag Manager",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-gulp-plain",
+			"Gulp",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-html5-plain",
+			"HTML5",
+			"icon"
+		),
+		new Aptitud(
+			"hibernate",
+			"Hibernate",
+			"icon img"
+		),
+		new Aptitud(
+			"ionic",
+			"Ionic",
+			"icon img"
+		),
+		new Aptitud(
+			"devicon-java-plain",
+			"Java",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-javascript-plain",
+			"JavaScript",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-jquery-plain",
+			"jQuery",
+			"icon"
+		),
+		new Aptitud(
+			"maven",
+			"Maven",
+			"icon img"
+		),
+		new Aptitud(
+			"devicon-mysql-plain",
+			"MySQL",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-nodejs-plain",
+			"Node JS",
+			"icon"
+		),
+		new Aptitud(
+			"npm",
+			"NPM",
+			"icon img"
+		),
+		new Aptitud(
+			"devicon-photoshop-plain",
+			"Photoshop",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-php-plain",
+			"PHP",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-python-plain",
+			"Python",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-react-original",
+			"ReactJS",
+			"icon"
+		),
+		new Aptitud(
+			"rest",
+			"Servicios REST",
+			"icon img"
+		),
+		new Aptitud(
+			"devicon-ruby-plain",
+			"Ruby",
+			"icon"
+		),
+		new Aptitud(
+			"devicon-rails-plain",
+			"Ruby on rails",
+			"icon"
+		),
+		new Aptitud(
+			"rxjs",
+			"Rxjs y Ngrx",
+			"icon img"
+		),
+		new Aptitud(
+			"devicon-sass-plain",
+			"Sass",
+			"icon"
+		),
+		new Aptitud(
+			"selenium",
+			"Selenium",
+			"icon img"
+		),
+		new Aptitud(
+			"icon-spring",
+			"Spring",
+			"icon"
+		),
+		/*new Aptitud(
+			"struts",
+			"Struts",
+			"icon img"
+		),
+		new Aptitud(
+			"svn",
+			"SVN",
+			"icon img"
+		),
+		new Aptitud(
+			"tfs",
+			"TFS",
+			"icon img"
+		),*/
+		new Aptitud(
+			"devicon-typescript-plain",
+			"TypeScript",
+			"icon"
+		)
+	];
 }
