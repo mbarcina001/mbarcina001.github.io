@@ -48,7 +48,7 @@ export class AppComponent {
 		  "Bilbomática",
 		  "Programador",
 		  "2019-Actualidad",
-		  `<p>Estoy involucrado un proyecto en Angular 8 y Ngrx.</p>`,
+		  `<p>Me he incorporado a la parte front del proyecto ECCAIRS2 para la Agencia Europea de Seguridad Aérea (EASA) que está siendo desarrollado con Angular 8 y NGRX. </p>`,
 		  "/Portfolio/assets/images/logos/bilbomatica.png"
 		)
 	];
@@ -366,7 +366,14 @@ export class AppComponent {
 			"SpringMarket",
 			"Página web para ecommerce",
 			[
-				"/Portfolio/assets/images/proyectos/springmarket1.png"
+				"/Portfolio/assets/images/proyectos/springmarket1.png",
+				"/Portfolio/assets/images/proyectos/springmarket2.png",
+				"/Portfolio/assets/images/proyectos/springmarket3.png",
+				"/Portfolio/assets/images/proyectos/springmarket4.png",
+				"/Portfolio/assets/images/proyectos/springmarket5.png",
+				"/Portfolio/assets/images/proyectos/springmarket6.png",
+				"/Portfolio/assets/images/proyectos/springmarket7.png",
+				"/Portfolio/assets/images/proyectos/springmarket8.png",
 			],
 			0,
 			[
