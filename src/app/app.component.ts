@@ -163,7 +163,7 @@ export class AppComponent {
 			],
 			"No",
 			"No"
-		),
+		)/*,
 		new Proyecto(
 			"p5",
 			"SMED",
@@ -203,7 +203,7 @@ export class AppComponent {
 			[],
 			"No",
 			"No"
-		)
+		)*/
 	];
 	
 	proyectosCarrera:Proyecto[] = [
@@ -407,12 +407,12 @@ export class AppComponent {
 			"Apache",
 			"icon"
 		),
-		new Aptitud(
+		/*new Aptitud(
 			"devicon-dot-net-plain",
 			"ASP.NET",
 			"icon"
 		),
-		/*new Aptitud(
+		new Aptitud(
 			"azure",
 			"Azure",
 			"icon img"
@@ -502,11 +502,11 @@ export class AppComponent {
 			"Photoshop",
 			"icon"
 		),
-		new Aptitud(
+		/*new Aptitud(
 			"devicon-php-plain",
 			"PHP",
 			"icon"
-		),
+		),*/
 		new Aptitud(
 			"devicon-python-plain",
 			"Python",

@@ -1,21 +1,21 @@
 @font-face {
 	font-family: "IndieFlower";
-	src: url("/assets/webfonts/IndieFlower.ttf") format("truetype"),
+	src: url("/Portfolio/assets/webfonts/IndieFlower.ttf") format("truetype"),
 }
 
 @font-face {
 	font-family: "BellaDonna";
-	src: url("/assets/webfonts/BellaDonna.ttf") format("truetype"),
+	src: url("/Portfolio/assets/webfonts/BellaDonna.ttf") format("truetype"),
 }
 
 @font-face {
 	font-family: "writers_original";
-	src: url("/assets/webfonts/writers_original.ttf") format("truetype"),
+	src: url("/Portfolio/assets/webfonts/writers_original.ttf") format("truetype"),
 }
 
 @font-face {
 	font-family: "WeekendontheMountains";
-	src: url("/assets/webfonts/WeekendontheMountains.ttf") format("truetype"),
+	src: url("/Portfolio/assets/webfonts/WeekendontheMountains.ttf") format("truetype"),
 }
 
 #landing{
@@ -139,6 +139,7 @@
 			}
 			
 			.fdown{
+				animation-duration: 2s;
 				-webkit-animation-duration: 2s;
 				-moz-animation-duration: 2s;
 			}

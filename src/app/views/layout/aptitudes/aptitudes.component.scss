@@ -11,11 +11,23 @@
 			&:nth-child(odd) {
 				background-color:grey;
 				color:white;
+
+				i {
+					&[class*="img"] {
+						background-color: white;
+					}
+				}
 			}
 
 			&:nth-child(even) {
 				background-color:white;
 				color:grey;
+
+				i {
+					&[class*="img"] {
+						background-color: grey;
+					}
+				}
 			}
 			
 			.icon{
@@ -40,52 +52,40 @@
 					margin-right: auto;
 				}
 				&[class*="azure"] {
-					mask-image: url(/assets/images/icons/azure.png);
-					background-color: white;
+					mask-image: url(/Portfolio/assets/images/icons/azure.png);
 				}
 				&[class*="cordova"] {
-					mask-image: url(/assets/images/icons/cordova.png);
-					background-color: grey;
+					mask-image: url(/Portfolio/assets/images/icons/cordova.png);
 				}
 				&[class*="hibernate"] {
-					mask-image: url(/assets/images/icons/hibernate.png);
-					background-color: grey;
+					mask-image: url(/Portfolio/assets/images/icons/hibernate.png);
 				}
 				&[class*="ionic"] {
-					mask-image: url(/assets/images/icons/ionic.png);
-					background-color: white;
+					mask-image: url(/Portfolio/assets/images/icons/ionic.png);
 				}
 				&[class*="maven"] {
-					mask-image: url(/assets/images/icons/maven.png);
-					background-color: white;
+					mask-image: url(/Portfolio/assets/images/icons/maven.png);
 				}
 				&[class*="npm"] {
-					mask-image: url(/assets/images/icons/npm.png);
-					background-color: grey;
+					mask-image: url(/Portfolio/assets/images/icons/npm.png);
 				}
 				&[class*="rest"] {
-					mask-image: url(/assets/images/icons/rest.png);
-					background-color: white;
+					mask-image: url(/Portfolio/assets/images/icons/rest.png);
 				}
 				&[class*="rxjs"] {
-					mask-image: url(/assets/images/icons/rxjs.png);
-					background-color: grey;
+					mask-image: url(/Portfolio/assets/images/icons/rxjs.png);
 				}
 				&[class*="selenium"] {
-					mask-image: url(/assets/images/icons/selenium.png);
-					background-color: grey;
+					mask-image: url(/Portfolio/assets/images/icons/selenium.png);
 				}
 				&[class*="struts"] {
-					mask-image: url(/assets/images/icons/struts.png);
-					background-color: grey;
+					mask-image: url(/Portfolio/assets/images/icons/struts.png);
 				}
 				&[class*="svn"] {
-					mask-image: url(/assets/images/icons/svn.png);
-					background-color: grey;
+					mask-image: url(/Portfolio/assets/images/icons/svn.png);
 				}
 				&[class*="tfs"] {
-					mask-image: url(/assets/images/icons/tfs.png);
-					background-color: white;
+					mask-image: url(/Portfolio/assets/images/icons/tfs.png);
 				}
 			}
 
