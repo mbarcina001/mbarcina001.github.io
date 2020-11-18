@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { ModalProyectoLinkComponent } from './modal-proyecto-link.component';
 
@@ -6,7 +6,7 @@ describe('ModalProyectoLinkComponent', () => {
   let component: ModalProyectoLinkComponent;
   let fixture: ComponentFixture<ModalProyectoLinkComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ ModalProyectoLinkComponent ]
     })

@@ -13,7 +13,7 @@ export class ProyectosComponent implements OnInit {
 	@Input() nombreSeccionProyectos:string;
 	@Input() proyectos: Proyecto[];
     selectedProyecto:Proyecto;
-	@ViewChild(ModalProyectosComponent) 
+	@ViewChild(ModalProyectosComponent, { static: true }) 
 	private modal:ModalProyectosComponent;
   
 	constructor(private cdRef:ChangeDetectorRef) { }
