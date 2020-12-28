@@ -4,11 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --base-href \"/Portfolio/\" --open",
+    "start": "ng serve --open",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "serve": "ng serve --base-href \"/Portfolio/\" --open",
+    "serve": "ng serve --open",
     "build": "ng build --prod --base-href \"https://mbarcina001.github.io/Portfolio/\"",
     "ngh": "ngh --no-silent --message=\"Serving last commit changes\""
   },
