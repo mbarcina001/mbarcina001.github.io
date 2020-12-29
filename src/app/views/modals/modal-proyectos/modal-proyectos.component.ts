@@ -1,7 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { Proyecto } from '../../../models/proyecto';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import $ from 'jquery';
 
 @Component({
   selector: 'app-modal',
@@ -41,30 +40,9 @@ export class ModalProyectosComponent implements OnInit {
 		}
 	}
 
-	mostrarModal(): void {
-
-	}
-
 	ocultarModal(): void {
 		this.dialogRef.close();
 	}
-
-	/*mostrarModal(): void {
-		$('#modalProyectos').removeClass('oculto');
-		$('#modalProyectos .modal-content').removeClass('animated slideOutRight');
-		$('#modalProyectos .modal-content').addClass('animated rollIn');
-		$('body').css('overflow', 'hidden');
-		this.proyectoIndex = 0;
-	}
-
-	ocultarModal(): void {
-		$('#modalProyectos .modal-content').removeClass('animated rollIn');
-		$('#modalProyectos .modal-content').addClass('animated slideOutRight');
-		$('body').css('overflow', 'visible');
-		setTimeout(function() {
-			$('#modalProyectos').addClass('oculto');
-		}, 1000);
-	}*/
 
 	flechaClick(elem): void {
 		const paginationWrapper = document.querySelector('.pagination-wrapper');

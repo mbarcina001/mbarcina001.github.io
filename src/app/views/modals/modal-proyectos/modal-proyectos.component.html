@@ -1,45 +1,43 @@
-<div id="modalProyectos" class="modalProyectos oculto" *ngIf="proyecto">
-	<div class="modal-content">
-		<div class="close" (click)="ocultarModal()">
-			<span>&times;</span>
+<div class="modal-grid">
+	<div class="close" (click)="ocultarModal()">
+		<span>&times;</span>
+	</div>
+	
+	<div class="modalImg" *ngIf="data.proyecto">
+		<div class="flecha-container">
+			<div class="flecha flechaIzq" (click)="anteriorImg(); flechaClick('flechaIzq');"> <i class="fas fa-angle-left"></i> </div>
 		</div>
-		
-		<div class="modalImg">
-			<div class="flecha-container">
-				<div class="flecha flechaIzq" (click)="anteriorImg(); flechaClick('flechaIzq');"> <i class="fas fa-angle-left"></i> </div>
-			</div>
-			<div class="img-container">
-				<img [src]="proyecto.imgs[proyectoIndex]">
-				
-				<div class="pagination-wrapper">
-					<div class="pagination-container">
-						<div class="little-dot  little-dot--first"></div>
-						<div class="little-dot">
-						  <div class="big-dot-container">
-							<div class="big-dot"></div>
-						  </div>
+		<div class="img-container">
+			<img [src]="data.proyecto.imgs[proyectoIndex]">
+			
+			<div class="pagination-wrapper">
+				<div class="pagination-container">
+					<div class="little-dot  little-dot--first"></div>
+					<div class="little-dot">
+						<div class="big-dot-container">
+						<div class="big-dot"></div>
 						</div>
-						<div class="little-dot  little-dot--last"></div>
 					</div>
+					<div class="little-dot  little-dot--last"></div>
 				</div>
 			</div>
-			<div class="flecha-container">
-				<div class="flecha flechaDch" (click)="siguienteImg(); flechaClick('flechaDch');"> <i class="fas fa-angle-right"></i> </div>
-			</div>	
+		</div>
+		<div class="flecha-container">
+			<div class="flecha flechaDch" (click)="siguienteImg(); flechaClick('flechaDch');"> <i class="fas fa-angle-right"></i> </div>
+		</div>	
+	</div>
+	
+	<div class="modalCaption" *ngIf="data.proyecto">
+		<p class="textoCaption">{{data.proyecto.descripcion}}</p>
+		<div class="textoCaption" *ngIf="data.proyecto.caracteristicas.length>0">
+			Características:<br>
+			<ul>
+				<li *ngFor="let caracteristica of data.proyecto.caracteristicas">
+					{{caracteristica}}
+				</li>
+			</ul>
 		</div>
 		
-		<div class="modalCaption">
-			<p class="textoCaption">{{this.proyecto.descripcion}}</p>
-			<div class="textoCaption" *ngIf="this.proyecto.caracteristicas.length>0">
-				Características:<br>
-				<ul>
-					<li *ngFor="let caracteristica of this.proyecto.caracteristicas">
-						{{caracteristica}}
-					</li>
-				</ul>
-			</div>
-			
-			<app-modal-proyecto-link [proyecto]="proyecto"></app-modal-proyecto-link>
-		</div>
+		<app-modal-proyecto-link [proyecto]="data.proyecto"></app-modal-proyecto-link>
 	</div>
 </div>

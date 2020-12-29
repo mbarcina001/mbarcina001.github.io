@@ -22,6 +22,9 @@ export class ProyectosComponent implements OnInit {
 
 	onSelect(pProyecto: Proyecto) {
 		this.dialog.open(ModalProyectosComponent, {
+			autoFocus: false,
+			height: '100vh',
+			width: '100vw',
 			data: {
 				proyecto: pProyecto
 			},
