@@ -2,6 +2,7 @@
 import { Proyecto } from '../../../models/proyecto';
 import { ChangeDetectorRef } from '@angular/core';
 import { ModalProyectosComponent } from '../../modals/modal-proyectos/modal-proyectos.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
 	selector: 'app-proyectos',
@@ -12,20 +13,19 @@ export class ProyectosComponent implements OnInit {
 
 	@Input() nombreSeccionProyectos: string;
 	@Input() proyectos: Proyecto[];
-	selectedProyecto: Proyecto;
-	@ViewChild(ModalProyectosComponent, {})
-	private modal: ModalProyectosComponent;
 
-	constructor(private cdRef: ChangeDetectorRef) { }
+	constructor(public dialog: MatDialog) { }
 
 	ngOnInit() {
 		this.resizeTextos(window.innerWidth);
 	}
 
 	onSelect(pProyecto: Proyecto) {
-		this.selectedProyecto = pProyecto;
-		this.cdRef.detectChanges();
-		this.modal.mostrarModal();
+		this.dialog.open(ModalProyectosComponent, {
+			data: {
+				proyecto: pProyecto
+			},
+		});
 	}
 
 	onResize(event) {
