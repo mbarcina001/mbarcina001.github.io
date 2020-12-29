@@ -1,14 +1,12 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-landing',
-  templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss', '../../../../assets/styles/fontawesome-all.css', '../../../../assets/styles/fa-brands.min.css', '../../../../assets/styles/animate.min.css']
+	selector: 'app-landing',
+	templateUrl: './landing.component.html',
+	styleUrls: ['./landing.component.scss']
 })
-export class LandingComponent implements OnInit {
+export class LandingComponent  {
 
 	constructor() { }
-
-	ngOnInit() { }
 
 }

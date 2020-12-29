@@ -2,28 +2,28 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Trayectoria } from '../../../models/trayectoria';
 
 @Component({
-  selector: 'app-trayectoria',
-  templateUrl: './trayectoria.component.html',
-  styleUrls: ['./trayectoria.component.scss']
+	selector: 'app-trayectoria',
+	templateUrl: './trayectoria.component.html',
+	styleUrls: ['./trayectoria.component.scss']
 })
 export class TrayectoriaComponent implements OnInit {
 
-  nombreSeccion:string = "Trayectoria";
-  @Input() listaTrayectorias: Trayectoria[];
-  selectedTrayectoria:Trayectoria;
+	nombreSeccion = 'Trayectoria';
+	@Input() listaTrayectorias: Trayectoria[];
+	selectedTrayectoria: Trayectoria;
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit(){
-    this.selectedTrayectoria = this.listaTrayectorias[0];
-  }
+	ngOnInit() {
+		this.selectedTrayectoria = this.listaTrayectorias[0];
+	}
 
-  public selectTrayectoria(ptrayectoria:Trayectoria){
-    this.selectedTrayectoria=ptrayectoria;
-  }
+	public selectTrayectoria(ptrayectoria: Trayectoria) {
+		this.selectedTrayectoria = ptrayectoria;
+	}
 
-  public isMobile() : boolean{
-    return window.innerWidth <= 900;
-  }
+	public isMobile(): boolean {
+		return window.innerWidth <= 900;
+	}
 
 }

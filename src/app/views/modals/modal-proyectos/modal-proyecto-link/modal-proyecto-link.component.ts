@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Proyecto } from '../../../../models/proyecto';
 
 @Component({
@@ -6,12 +6,9 @@ import { Proyecto } from '../../../../models/proyecto';
   templateUrl: './modal-proyecto-link.component.html',
   styleUrls: ['./modal-proyecto-link.component.scss']
 })
-export class ModalProyectoLinkComponent implements OnInit {
-  @Input() proyecto:Proyecto;
+export class ModalProyectoLinkComponent {
+  @Input() proyecto: Proyecto;
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

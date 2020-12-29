@@ -1,16 +1,14 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-trapezoide',
-  templateUrl: './no-trapezoide.html',
-  styleUrls: ['./no-trapezoide.scss']
+	selector: 'app-trapezoide',
+	templateUrl: './no-trapezoide.html',
+	styleUrls: ['./no-trapezoide.scss']
 })
-export class TrapezoideComponent implements OnInit {
-  @Input() nombreSeccion: string;
+export class TrapezoideComponent  {
 
-  constructor() { }
+	@Input() nombreSeccion: string;
 
-  ngOnInit() {
-  }
+	constructor() { }
 
 }

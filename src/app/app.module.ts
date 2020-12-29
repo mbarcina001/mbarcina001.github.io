@@ -19,31 +19,34 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalProyectoLinkComponent } from './views/modals/modal-proyectos/modal-proyecto-link/modal-proyecto-link.component';
 
+import { MatDialogModule } from '@angular/material/dialog';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    LandingComponent,
-    TrayectoriaComponent,
-    ProyectosComponent,
-    FooterComponent,
-    AptitudesComponent,
-    ContactoComponent,
-    ModalProyectosComponent,
-    TrapezoideComponent,
-    ErrorCampoComponent,
-    ModalProyectoLinkComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule,
-    ToastrModule.forRoot({
-      preventDuplicates: true,
-    })
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent,
+		LandingComponent,
+		TrayectoriaComponent,
+		ProyectosComponent,
+		FooterComponent,
+		AptitudesComponent,
+		ContactoComponent,
+		ModalProyectosComponent,
+		TrapezoideComponent,
+		ErrorCampoComponent,
+		ModalProyectoLinkComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		ReactiveFormsModule,
+		HttpClientModule,
+		BrowserAnimationsModule,
+		MatDialogModule,
+		ToastrModule.forRoot({
+			preventDuplicates: true,
+		})
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
