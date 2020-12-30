@@ -143,8 +143,8 @@ export class AppComponent {
 			0,
 			[
 				'Implementado con Angular 4',
-				'Uso de servicios REST implementados en un Middleware aparte en JAVA para realizar llamada con Axis y Jaxb y Soap' +
-				+ 'con cabecera de seguridad y firma entre otros',
+				`Uso de servicios REST implementados en un Middleware aparte en JAVA para realizar llamada con Axis y Jaxb y Soap
+				con cabecera de seguridad y firma entre otros`,
 				'Diseño adaptativo y responsive mediante CSS3 y Bootstrap 4',
 			],
 			'No',
@@ -181,8 +181,8 @@ export class AppComponent {
 				'Implementado con Angular 6, Ionic 3 y Cordova',
 				'Uso de diversos plugins de Cordova para el acceso de ficheros, uso de la cámara, lector de código de barras, etc.',
 				'Funciones de geolocalización y mapa.',
-				'Emplea un template adquirido especificamente como base para el proyecto y a partir del cual se han personalizado' +
-				+ ' los estilos de la aplicación haciendo uso de HTML5, Ionic3 y CSS3'
+				`Emplea un template adquirido especificamente como base para el proyecto y a partir del cual se han personalizado
+				los estilos de la aplicación haciendo uso de HTML5, Ionic3 y CSS3.`
 			],
 			'No',
 			'No'
@@ -239,7 +239,7 @@ export class AppComponent {
 			[
 				'Parte front implementada con Angular 8, Ngrx y Ngrx/data',
 				'Uso de librerías de apoyo como Bootstrap y Kendo',
-				'Uso de oras tenologías como Spring, Elastic o MySQL',
+				'Uso de oras tecnologías como Spring, Elastic o MySQL',
 				'Metodología SCRUM'
 			],
 			'No',
